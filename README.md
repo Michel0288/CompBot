@@ -2,7 +2,7 @@
 
 
 Design Draft:
-https://www.figma.com/file/miwzj80GtIX81A8dWRoq8w/DoC_Chatbot?node-id=0%3A1
+
 
 Remember to always create a virtual environment and install the packages in your requirements file
 
