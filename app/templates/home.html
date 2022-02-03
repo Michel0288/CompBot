@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="content" id="content">
+<div class="HomeBody" id="HomeBody">
+    <div class="images" id="images">
+        <img class="BotImage" id="BotImage" src="{{url_for('static', filename='images/bot.gif')}}">
+    </div>
+
+    <div class="para" id="para">
+    <p>Hi! I'm Comp Bot. Your Computing AI! </p>
+    </div>
+
+    <div class="HomeButtons" id="HomeButtons">
+        <div class="bdiv" id="bdiv1">
+        <button class="btn btn-block" id="About">About me</button>
+        </div>
+        <div class="bdiv" id="bdiv2">
+         <button class="btn btn-block" id="Chat">Lets Chat!</button>
+        </div>
+        <div class="bdiv" id="bdiv3">
+         <button class="btn btn-block" id="Settings">Settings</button>
+        </div>
+        
+       
+       
+    </div>
+</div>
+<div>
+
+{% endblock %}
