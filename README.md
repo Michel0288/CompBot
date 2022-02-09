@@ -1,8 +1,3 @@
-#DoC_Chatbot 
-
-
-Design Draft:
-
 
 Remember to always create a virtual environment and install the packages in your requirements file
 
