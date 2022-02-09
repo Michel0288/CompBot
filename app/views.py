@@ -7,9 +7,7 @@ This file creates your application.
 
 
 from app import app
-from flask import render_template, request, redirect, url_for, flash
-from app import mail
-from flask_mail import Message
+from flask import Flask, render_template,request,jsonify
 
 ###
 # Routing for your application.
