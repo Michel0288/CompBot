@@ -22,7 +22,7 @@
         {% include "header.html" %}
     </header>
     <main>
-        <div class="container">
+        <div class="containers">
           {% with messages =
             get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -37,7 +37,7 @@
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="containers">
             {% include "footer.html" %}
         </div>
     </footer>

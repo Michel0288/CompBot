@@ -2,4 +2,51 @@
 
 {% block main %}
 
+<div class="content" id="HomeContent">
+    <div class="TopContent" id="TopContent">
+        <div class="Left" id="Left">
+            <h1>CompBot, The Faculty of Science and Technology's AI Chatbot.</h1>
+            <p>The CompBot project is a chatbot focused on giving  students information about the faculty of science and technology. It is a great tool to use when students have questions about the faculty without the hassle of sending a plethora of emails or going in person to speak to someone from the faculty.</p>
+        </div>
+        <div class="Middle" id="Middle">
+
+        </div>
+        <div class="Right" id="Right">
+
+        </div>
+        
+       
+    </div>
+    <div class="BottomContent" id="BottomContent">
+        <h5>HOW IT WORKS</h5>
+        <h3>Best Features to Help You</h3>
+        <div class="cards">
+           <div class="card" id="card1">
+                <img class="card-img-top" src="{{url_for('static', filename='images/time.png')}}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Answer questions related to the faculty in a timely manner giving a human-like response.</p>
+                </div>
+           </div>
+           <div class="card" id="card2">
+                <img class="card-img-top" src="{{url_for('static', filename='images/save.png')}}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Save user data so it can start chatting with users right where they left off.</p>
+                </div>
+           </div>
+           <div class="card" id="card3">
+                <img class="card-img-top" src="{{url_for('static', filename='images/timemanagement.png')}}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Save questions / statements and learn from them so it can use them in the future.</p>
+                </div>
+           </div>
+           <div class="card" id="card4">
+                <img class="card-img-top" src="{{url_for('static', filename='images/admin.png')}}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Notify administrator for questions  that cannot be answered. Admin will respond to these directly via email.</p>
+                </div>
+           </div>
+       </div>
+    </div>
+<div>
+
 {% endblock %}
