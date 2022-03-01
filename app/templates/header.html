@@ -1,27 +1,20 @@
-<nav class="navbar navbar-expand-sm fixed-top">
-  <div class="nav-left"
-    <a class="navbar-brand" href="#"><img class="Logo" src="{{url_for('static', filename='images/logo.png')}}" alt="NexTech Solutions Logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary stick-top">
+  <div class="container">
+    <a class="navbar-brand" href="{{url_for('home')}}">
+      <img class="img-fluid" src="{{ url_for('static', filename='images/logo.png') }}" alt="" width="50%">
+    </a>
+    <button id="border-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  </div>
-
-  <div class="nav-right">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('about') }}">Demo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('about') }}">Meet the Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="LoginButton" href="{{ url_for('about') }}">Login</a>
-        </li>
-      </ul>
+    <div class="ms-3 collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto fw-bold text-nowrap">
+        <a class="nav-link active me-4" aria-current="page" href="{{url_for('home')}}"><span class="border-bottom border-warning border-3 me-3">Home</span></a>
+        <a class="nav-link active me-4" href="#">Demo</a>
+        <a class="nav-link active me-4" href="#">Meet the Team</a>
+        <form class="mb-2 justify-content-start">
+          <button class="btn btn-warning fw-bold px-4" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        </form>
+      </div>
     </div>
   </div>
 </nav>
