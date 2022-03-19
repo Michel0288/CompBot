@@ -19,10 +19,10 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/about/')
-def about():
-    """Render the website's about page."""
-    return render_template('about.html', name="CompBot")
+@app.route('/team/')
+def team():
+    """Render the website's team page."""
+    return render_template('team.html', name="CompBot")
 
 
 ###
