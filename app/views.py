@@ -30,6 +30,12 @@ def demo():
     """Render the website's demo page."""
     return render_template('demo.html', name="CompBot")
 
+@app.route('/chat/')
+def chat():
+    """Render the website's chat page."""
+    return render_template('chat.html', name="CompBot")
+
+
 
 ###
 # The functions below should be applicable to all Flask apps.
