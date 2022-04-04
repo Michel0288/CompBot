@@ -25,6 +25,12 @@ def team():
     return render_template('team.html', name="CompBot")
 
 
+@app.route('/demo/')
+def demo():
+    """Render the website's demo page."""
+    return render_template('demo.html', name="CompBot")
+
+
 ###
 # The functions below should be applicable to all Flask apps.
 ###

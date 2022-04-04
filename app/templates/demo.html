@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+<section class="overflow-hidden">
+    <div class="container1 px-4 pb-4" style="background-color: #1983FF;">
+        <div class="row flex-lg align-items-center pb-4">
+            <div class="col-lg-6 p-4">
+                <h4 class="display-5 fw-bold lh-1 mb-3">
+                    Watch our quick video tutorial 
+                    below to learn how to get started !
+                </h4>
+            </div>
+            
+            <div class="col-lg-6 h-100 p-4 align-items-center">
+                <img id="VideoImage" src="{{url_for('static', filename ='images/video.jpg')}}" class="d-block mx-lg-auto img-fluid" alt="Video Illustration" width="600" height="300">
+            </div>
+        </div>
+    </div>
+        
+    <div class="container mt-5">
+        <iframe class="embed-responsive" width="100%" height="500" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+</section>
+
+<div class="album my-3 py-3">
+    <div class="container">
+
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade text-dark" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="loginModalLabel">Login to access CompBot</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-5">
+                        <label for="email" class="form-label fw-bold">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text text-dark mb-3">We'll never share your email with anyone else.</div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label fw-bold">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <button style="margin-bottom: -30px" class="w-100 btn btn-lg rounded-4 btn-primary" type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
