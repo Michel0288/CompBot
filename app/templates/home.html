@@ -1,86 +1,56 @@
 {% extends "base.html" %}
-
 {% block main %}
-<section class="bg-primary overflow-hidden">
-    <div class="container col-xxl-8 px-4 pb-4">
-        <div class="row flex-lg align-items-center g-5 pb-4">
-            <div class="col-lg-4">
-                <h1 class="display-5 fw-bold lh-1 mb-3">
-                    CompBot, <br> Faculty of Science & Technology's AI Chatbot
-                </h1>
-                <p style="color: #fff; font-weight: 400;" class="lead">
-                    The CompBot project is a chatbot focused on giving students 
-                    information about the faculty of science and technology. 
-                    It is a great tool to use when students have questions about 
-                    the faculty without the hassle of sending a plethora of emails 
-                    or going in person to speak to someone from the faculty.
-                </p>
+<div class="container mt-5">
+    <div class="row">
+        <div id="home-text" class="col-sm-6">
+            <h1 class="display-5 fw-bold lh-1 mb-4">
+                <span style="color:#3986FD;">CompBot</span>, <br> Faculty of Science & <br> Technology's AI Chatbot
+            </h1>
+            <p style="font-size:24px;">
+                The CompBot project is a <span style="font-weight: 700;">general purpose</span> chatbot tailored to giving students information about the Faculty of Science and Technology.
+            </p>
+            <div class="d-flex mt-4 mb-2">
+                <button id="nav-btn-signup" class="d-inline-flex align-items-center btn-default fw-bold px-3 border-0 rounded-3" type="button">Let's Chat</button>
+                <p class="ms-5" style="font-weight: 700;"> Watch the demo <img src="{{url_for('static', filename ='images/playicon.png')}}" class="" alt="play" width="" height=""></p>
             </div>
-            <div class="col-lg-4 h-100 align-items-center">
-                <img id="Phone" src="{{url_for('static', filename ='images/phone.png')}}" class="d-block mx-lg-auto img-fluid" alt="CompBot Illustration" width="1000" height="500">
-            </div>
-            <div class="col-lg-4">
-                <h1 class="display-6 fw-bold lh-1 mb-4 text-nowrap text-center">Have a question ?</h1>
-                <div class="d-grid gap-5 d-md-flex justify-content-md-center">
-                    <a class="btn btn-light btn-lg px-4" href="{{url_for('chat')}}">Let's Chat</a>
-                    <button type="button" class="btn btn-dark btn-lg px-4">Get Help</button>
-                </div>
-                <p style="color: #fff; font-weight: 400;" class="mt-3 lead text-center">
-                    We care about protecting your data.
-                    <br/>
-                    Here's our <span style="color: #000; font-weight: 700;">Privacy Policy.</span>
-                </p>
-            </div>
+            <p>
+                We care about protecting your data. <br> Here's our <span style="font-weight: 700;">Privacy Policy</span>.
+            </p>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-center align-content-center" id="home-image">
+            <img src="{{url_for('static', filename ='images/compbot_image.png')}}" class="" alt="CompBot Illustration" width="" height="">
         </div>
     </div>
-</section>
-
-<div class="album my-4 py-5 bg-light">
-    <div class="container">
-        <h1 class="fs-3 fw-bold lh-1 mb-4 text-nowrap text-center">HOW IT WORKS</h1>
-        <h1 class="fs-2 fw-bold lh-1 mb-5 text-nowrap text-center">BEST FEATURES TO HELP YOU</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-            <div class="col">
-                <div class="card shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="mt-5 bi bi-smartwatch my-3" style="margin: auto; width: 40%; height: 100%" fill="#0d6efd" viewBox="0 0 16 16">
-                        <path d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5V5z"/>
-                        <path d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667zM4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3z"/>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text text-center">Answer questions related to the faculty in a timely manner giving a human-like response.</p>
+</div>
+<div class="mt-5"id="benefits">
+    <div class="container pt-5">
+        <h2>Benefits</h2>
+        <div class="d-flex justify-content-center">
+            <div style="width:100%;">
+                <div class="benefits1 row" style="margin-left:5em;">
+                    <div class="benefits2 col-sm text-start mt-5">
+                        <img src="{{url_for('static', filename ='images/timely.png')}}" class=""  width="" height="">
+                        <p class="fw-bold">Gives Timely <br>Responses</p>
+                        <p>Answer questions in a <br> timely manner giving a <br> human-like response.
+                        </p>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="mt-5 bi bi-chat-left-text my-3" style="margin: auto; width: 40%; height: 100%" fill="#0d6efd" viewBox="0 0 16 16">
-                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                        <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text text-center">Save user data so it can start chatting with users right where they left off.</p>
+                    <div class="benefits2 col-sm text-start mt-5">
+                        <img src="{{url_for('static', filename ='images/stores.png')}}" class=""  width="" height="">
+                        <p class="fw-bold">Stores Data for<br> Future Use</p>
+                        <p>Save user data so it can <br>start chatting with users<br> right where they left off.
+                        </p>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="mt-5 bi bi-question-octagon my-3" style="margin: auto; width: 40%; height: 100%" fill="#0d6efd" viewBox="0 0 16 16">
-                        <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
-                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text text-center">Save questions / statements and learn from them so it can use them in the future</p>
+                    <div class="benefits2 col-sm text-start mt-5">
+                        <img src="{{url_for('static', filename ='images/saves.png')}}" class=""  width="" height="">
+                        <p class="fw-bold">Learns from User<br> Statements</p>
+                        <p>Save questions/statements<br> and learn from them so it<br> can use them in the future.
+                        </p>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope-check my-3" style="margin: auto; width: 40%; height: 60%" fill="#0d6efd" viewBox="0 0 16 16">
-                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-                        <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
-                      </svg>
-                    <div class="card-body">
-                        <p class="card-text text-center">Notify administrator for questions that cannot be answered. Admin will respond to these directly via email.</p>
+                    <div class="benefits2 col-sm text-start mt-5">
+                        <img src="{{url_for('static', filename ='images/question.png')}}" class="" width="" height="">
+                        <p class="fw-bold">No Question Left<br> Unanswered</p> 
+                        <p>Admin will respond to<br> questions bot can not<br> answer directly via email.
+                        </p>  
                     </div>
                 </div>
             </div>
@@ -88,34 +58,56 @@
     </div>
 </div>
 
-<!-- Login Modal -->
-<div class="modal fade text-dark" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="loginModalLabel">Login to access CompBot</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="container mb-5">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              How does CompBot work?
+            </button>
+          </h2>
+          <br>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <br>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              What is the purpose of CompBot?
+            </button>
+          </h2>
+          <br>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <br>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              How long does it take to respond?
+            </button>
+          </h2>
+          <br>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+        <br>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                How smart is CompBot?
+              </button>
+            </h2>
+            <br>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
             </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-5">
-                        <label for="email" class="form-label fw-bold">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text text-dark mb-3">We'll never share your email with anyone else.</div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label fw-bold">Password</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                    <button style="margin-bottom: -30px" class="w-100 btn btn-lg rounded-4 btn-primary" type="submit">Continue</button>
-                </form>
-            </div>
+          </div>
         </div>
     </div>
-</div>
-
-<div class="chat-popup" id="myForm">
-   
-</div>
-  
-
 {% endblock %}

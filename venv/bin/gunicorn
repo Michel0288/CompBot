@@ -1,4 +1,4 @@
-#!/home/patrece/Desktop/CompBot/venv/bin/python3
+#!/home/michel/Desktop/CompBot/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

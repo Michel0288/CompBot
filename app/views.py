@@ -6,9 +6,12 @@ This file creates your application.
 """
 
 
-from app import app
-from flask import Flask, render_template,request,jsonify
-
+from app import app, db, login_manager
+from flask import render_template, request, redirect, url_for, flash
+from flask_login import login_user, logout_user, current_user, login_required
+# from app.forms import LoginForm
+from app.models import UserProfile
+from werkzeug.security import check_password_hash
 ###
 # Routing for your application.
 ###
@@ -35,11 +38,23 @@ def chat():
     """Render the website's chat page."""
     return render_template('chat.html', name="CompBot")
 
+@app.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    flash('You have been logged out.', 'danger')
+    return redirect(url_for('home'))
 
 
 ###
 # The functions below should be applicable to all Flask apps.
 ###
+
+# user_loader callback. This callback is used to reload the user object from
+# the user ID stored in the session
+@login_manager.user_loader
+def load_user(id):
+    return UserProfile.query.get(int(id))
 
 
 # Flash errors from the form if validation fails

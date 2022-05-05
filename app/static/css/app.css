@@ -1,171 +1,62 @@
-body {
-    padding-top: 5rem;
+html{
+    font-size:21px !important;
+}
+h1{
+    font-size:55px !important;
+}
+#nav-btn-login{
+    border: 2px solid #3986FD;
+    color: #3986FD;
+    height: 3.3vh;
+    background-color:white;
+}
+#nav-btn-signup{
+    background-color:#3986FD ;
+    color:white;
+    height: 3.3vh;
+}
+.nav-link{
+    color:black;
+}
+@media screen and (max-width: 480px) {
+    #home-image {
+        display: none !important;
+    }
+    #home-text {
+        text-align: center !important;
+    }
+    .benefits2{
+        text-align: center !important;
+    }
+    .benefits1{
+       margin-left:0 !important;
+    }
+    #benefits{
+        background:#D5EFF2 !important;
+        height: 74em !important;
+        margin-bottom: 3em;
+    }
+    #footer-center{
+        margin-left:0 !important;
+    }
+    .footer1{
+        text-align: center !important;
+    }
+}
+#benefits{
+    background-image: linear-gradient(#D5EFF2,#D7F0F3,white);
+    height: 30em;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+h6{
+    color: #B7B7B7;
+}
+a{
+    color:#fff;
+    text-decoration: none;
 }
 
-#Phone{
-    animation: bounce;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
 
-.bounce{
-    animation-name: bounce;
-    animation-timing-function: ease;
-}
-
-@keyframes bounce {
-    0%   { transform: scale(1,1)    translateY(0); }
-    10%  { transform: scale(1.1,.9) translateY(0); }
-    30%  { transform: scale(.9,1.1) translateY(-100px); }
-    50%  { transform: scale(1,1)    translateY(0); }
-    57%  { transform: scale(1,1)    translateY(-7px); }
-    64%  { transform: scale(1,1)    translateY(0); }
-    100% { transform: scale(1,1)    translateY(0); }
-}
-
-/* Team Page Styles */
-
-#BioImage{
-    box-shadow: 5px 5px grey;
-    border-radius: 10px;
-}
-
-#Bio{
-    box-shadow: 5px 5px grey;
-    background-color: #113694;
-    border-radius: 10px;
-}
-
-#Bio h3, #Bio h4{
-    color: #FFDC25;
-}
-
-#Bio h4{
-    font-weight: 300;
-}
-
-#Bio h5{
-    color: #59CDFF;
-}
-
-/* Chatbot Designs */
-#Chatbody{
-    /* height:60vh;
-    width:58vw; */
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.chatbubble{
-    width:35px;
-    height:35px;
-}
-#bot-image{
-    width:250px;
-    height:250px;
-}
-#chatspace{
-    height:52vh;
-    width:44vw;
-    margin-top:7px;
-    margin-right:21px;
-    border-radius:10px;
-}
-#icon-area p{
-    font-weight: 800;
-    font-size:18px;
-
-}
-#icon-area{
-    margin:auto;
-    text-align: center;
-}
-#chatarea{
-    padding-top:5px;
-    width:880px;
-    height:460px;
-    margin-bottom: 5px;
-    overflow-y: auto;
-    /* background-color: #B71E39; */
-}
-input{
-    height:46px;
-    border-radius: 46px !important;
-    -webkit-border-radius: 46px !important;
-    -moz-border-radius: 46px !important;
-    -ms-border-radius: 46px !important;
-    -o-border-radius: 46px !important;
-}
-button{
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: inherit !important;
-}
-#buttoni{
-    width: 50px;
-    height: 48px;
-}
-
-.msg-list {
-    width: 100%;
-}
-.messenger-container {
-    padding: 8px 15px 8px 13px;
-    margin: 0 0 25px 35px;
-    float: left;
-    max-width: 82%;
-    background: #f2f2f2;
-    border-radius: 10px;
-    min-width: 20%;
-    position: relative; box-sizing: border-box;
-    box-shadow: 7px 10px 6px -5px #BBC0C7;
-}
-.messenger-container p {
-   color: #3D3D3D;
-    font-size: 12px;
-    margin-bottom: 6px;
-    line-height: 18px;
-    word-wrap: break-word; margin: 0;
-}
-.sender .messenger-container {
-    float: right;
-    margin-right: 35px;
-    width: auto;
-    background: #D5DBFF;
-    margin-left: 0px;
-    padding: 8px 15px 8px 13px;
-}
-.clear {
-    clear:both;
-    width: 100%;
-    padding: 0px !important;
-    margin: 0px;
-    height:0px;
-}
-.messenger-container::before {
-    width: 0px;
-    height: 0px;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent; 
-
-    border-right:15px solid #f2f2f2; 
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: -15px;
-}
-.sender .messenger-container::before {
-      width: 0px;
-      height: 0px;
-      border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;
-      border-left: 15px solid #D5DBFF;
-      content: "";
-      position: absolute;
-      top: 9px;
-      left: 99%;border-right: none;
-}
