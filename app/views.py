@@ -38,6 +38,16 @@ def chat():
     """Render the website's chat page."""
     return render_template('chat.html', name="CompBot")
 
+@app.route('/chat/compbot')
+def chat_compbot():
+    """Render the website's chat page for compbot"""
+    return render_template('compbot.html')
+
+@app.route('/chat/admin')
+def chat_admin():
+    """Render the website's chat page for admin"""
+    return render_template('admin.html')
+
 @app.route("/logout")
 @login_required
 def logout():
