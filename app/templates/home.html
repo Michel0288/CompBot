@@ -1,113 +1,1251 @@
-{% extends "base.html" %}
-{% block main %}
-<div class="container mt-5">
-    <div class="row">
-        <div id="home-text" class="col-sm-6">
-            <h1 class="display-5 fw-bold lh-1 mb-4">
-                <span style="color:#3986FD;">CompBot</span>, <br> Faculty of Science & <br> Technology's AI Chatbot
-            </h1>
-            <p style="font-size:24px;">
-                The CompBot project is a <span style="font-weight: 700;">general purpose</span> chatbot tailored to giving students information about the Faculty of Science and Technology.
-            </p>
-            <div class="d-flex mt-4 mb-2">
-                <button id="nav-btn-signup" class="d-inline-flex align-items-center btn-default fw-bold px-3 border-0 rounded-3" type="button">Let's Chat</button>
-                <p class="ms-5" style="font-weight: 700;"> Watch the demo <img src="{{url_for('static', filename ='images/playicon.png')}}" class="" alt="play" width="" height=""></p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Geeks is a fully responsive and yet modern premium bootstrap 5 template & snippets. Geek is feature-rich components and beautifully designed pages that help you create the best possible website and web application projects. Bootstrap Snippet "
+    />
+    <meta name="keywords" content="Geeks UI, bootstrap, bootstrap 5, Course, Sass, landing, Marketing, admin themes, bootstrap admin, bootstrap dashboard, ui kit, web app, multipurpose" />
+
+
+
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/favicon/favicon.ico">
+
+
+    <!-- Libs CSS -->
+    <link href="../static/fonts/feather/feather.css" rel="stylesheet">
+    <link href="../static/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../static/libs/dragula/dist/dragula.min.css" rel="stylesheet" />
+    <link href="../static/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="../static/libs/dropzone/dist/dropzone.css" rel="stylesheet" />
+    <link href="../static/libs/magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
+    <link href="../static/libs/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../static/libs/@yaireo/tagify/dist/tagify.css" rel="stylesheet">
+    <link href="../static/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+    <link href="../static/libs/tippy.js/dist/tippy.css" rel="stylesheet">
+    <link href="../static/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="../static/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+    <link href="../static/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+    <link href="../static/libs/nouislider/dist/nouislider.min.css" rel="stylesheet">
+    <link href="../static/libs/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../static/css/theme.min.css">
+
+    <title>Course Lead | Geeks - Bootstrap 5 Template </title>
+</head>
+
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <!-- navbar login -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid px-0">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../static/images/brand/logo/logo.svg" alt=""/>
+            </a>
+
+            <!-- Button -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="icon-bar top-bar mt-0"></span>
+			<span class="icon-bar middle-bar"></span>
+			<span class="icon-bar bottom-bar"></span>
+		</button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarBrowse" aria-haspopup="true" aria-expanded="false" data-display="static">
+                            Home
+                        </a>                                                                                
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarBrowse" aria-haspopup="true" aria-expanded="false" data-display="static">
+                            How It Works
+                        </a>                                                                                
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarBrowse" aria-haspopup="true" aria-expanded="false" data-display="static">
+                            Meet The Team
+                        </a>                                                                                
+                    </li>
+                </ul>
+                <form class="mt-3 mt-lg-0 ms-lg-3 d-flex align-items-center">
+                    <span class="position-absolute ps-3 search-icon">
+                        <i class="fe fe-search"></i>
+                    </span>
+                    <input type="search" class="form-control ps-6" placeholder="Search Courses" />
+                </form>
+                <div class="ms-auto mt-3 mt-lg-0">
+                    <a href="{{ url_for('chat_compbot') }}" class="btn btn-white shadow-sm me-1">Sign In</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
             </div>
-            <p>
-                We care about protecting your data. <br> Here's our <span style="font-weight: 700;">Privacy Policy</span>.
-            </p>
         </div>
-        <div class="col-sm-6 d-flex justify-content-center align-content-center" id="home-image">
-            <img src="{{url_for('static', filename ='images/compbot_image.png')}}" class="" alt="CompBot Illustration" width="" height="">
-        </div>
-    </div>
-</div>
-<div class="mt-5"id="benefits">
-    <div class="container pt-5">
-        <h2>Benefits</h2>
-        <div class="d-flex justify-content-center">
-            <div style="width:100%;">
-                <div class="benefits1 row" style="margin-left:5em;">
-                    <div class="benefits2 col-sm text-start mt-5">
-                        <img src="{{url_for('static', filename ='images/timely.png')}}" class=""  width="" height="">
-                        <p class="fw-bold">Gives Timely <br>Responses</p>
-                        <p>Answer questions in a <br> timely manner giving a <br> human-like response.
+    </nav>
+
+    <!-- Page Content -->
+    <div class="py-md-20 py-12 bg-dark ">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="mb-4 mb-xl-0 text-center text-md-start">
+                        <!-- Caption -->
+                        <h1 class="display-2 fw-bold mb-3 text-white ls-sm ">                <span style="color:#3986FD;">CompBot</span>, <br> Faculty of Science & <br> Technology's AI Chatbot</h1>
+                        <p class="mb-4 lead text-white-50">
+                            The CompBot project is a <span style="font-weight: 700; color:#fff">general purpose</span> chatbot tailored to giving students information about the Faculty of Science and Technology.
                         </p>
+                        <!-- List -->
+                        <div class="mb-6 mb-0">
+                            <ul class="list-unstyled fs-4 ">
+                                <li class="mb-2 text-white-50"><span class="me-2 "><i class="fe fe-clock text-warning "></i></span><span class="align-top">Easy To Use</span></li>
+                                <li class="mb-2 text-white-50"><span class="me-2 "><i class="fe fe-video text-warning "></i></span><span class="align-top">Live Demo</span></li>
+                                <li class="mb-2 text-white-50"><span class="me-2 "><i class="fe fe-users text-warning "></i></span><span class="align-top">1200+ Students Helped</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=JRzWRZahOVU" class="popup-youtube btn btn-white btn-lg fs-4">Watch Preview</a>
                     </div>
-                    <div class="benefits2 col-sm text-start mt-5">
-                        <img src="{{url_for('static', filename ='images/stores.png')}}" class=""  width="" height="">
-                        <p class="fw-bold">Stores Data for<br> Future Use</p>
-                        <p>Save user data so it can <br>start chatting with users<br> right where they left off.
-                        </p>
+                </div>
+                <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-12">
+                    <!-- Card -->
+                    <div class="card" style="z-index: 1;">
+                        <!-- Card body -->
+                        <div class="card-body p-6">
+                            <div class="mb-4">
+                                <h1 class="mb-4 lh-1 fw-bold h2">Create Free Account</h1>
+                            </div>
+                            <!-- Form -->
+                            <form>
+                                <!-- Username -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label visually-hidden">Email</label>
+                                    <input type="email" id="email" class="form-control" name="email" placeholder="Email" required="">
+                                </div>
+                                <!-- Password -->
+                                <div class="mb-3">
+                                    <label for="password" class="form-label visually-hidden">Password</label>
+                                    <input type="password" id="password" class="form-control" name="password" placeholder="Password" required="">
+                                </div>
+                                <!-- Button -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="card-footer bg-white px-6 py-4">
+                            <p class="mb-0">By continuing you accept the <a href="#" class="text-inherit fw-semi-bold">Terms of Use</a>,<a href="#" class="text-inherit fw-semi-bold"> Privacy
+                  Policy</a>, and <a href="#" class="text-inherit fw-semi-bold">Data Policy</a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="benefits2 col-sm text-start mt-5">
-                        <img src="{{url_for('static', filename ='images/saves.png')}}" class=""  width="" height="">
-                        <p class="fw-bold">Learns from User<br> Statements</p>
-                        <p>Save questions/statements<br> and learn from them so it<br> can use them in the future.
-                        </p>
-                    </div>
-                    <div class="benefits2 col-sm text-start mt-5">
-                        <img src="{{url_for('static', filename ='images/question.png')}}" class="" width="" height="">
-                        <p class="fw-bold">No Question Left<br> Unanswered</p> 
-                        <p>Admin will respond to<br> questions bot can not<br> answer directly via email.
-                        </p>  
+                    <!-- Pattern -->
+                    <div class="position-relative">
+                        <div class="position-absolute bottom-0 end-0 me-md-n3 mb-md-n6 me-lg-n4 mb-lg-n4 me-xl-n6 mb-xl-n8 d-none d-md-block ">
+                            <img src="../static/images/pattern/dots-pattern.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="container mb-5">
-    <h2>Frequently Asked Questions</h2>
-    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              How does CompBot work?
-            </button>
-          </h2>
-          <br>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-          </div>
-        </div>
-        <br>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              What is the purpose of CompBot?
-            </button>
-          </h2>
-          <br>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
-        </div>
-        <br>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              How long does it take to respond?
-            </button>
-          </h2>
-          <br>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-        <br>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                How smart is CompBot?
-              </button>
-            </h2>
-            <br>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    <!-- Feature section -->
+    <div class="py-4 shadow-sm position-relative bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Feature -->
+                    <div class="text-dark fw-semi-bold lh-1 fs-4 mb-3 mb-lg-0"><span class="icon-shape icon-xs rounded-circle bg-light-warning text-center me-2">
+                        <i class="mdi mdi-check text-dark-warning "></i></span><span class="align-middle">Quick Response</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Feature -->
+                    <div class="text-dark fw-semi-bold lh-1 fs-4 mb-3 mb-lg-0"><span class="icon-shape icon-xs rounded-circle bg-light-warning text-center me-2">
+                        <i class="mdi mdi-check text-dark-warning "></i></span><span class="align-middle">The Latest Information</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Feature -->
+                    <div class="text-dark fw-semi-bold lh-1 fs-4 mb-3 mb-lg-0"><span class="icon-shape icon-xs rounded-circle bg-light-warning text-center me-2">
+                        <i class="mdi mdi-check text-dark-warning "></i></span><span class="align-middle">100% Online Platform</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Feature -->
+                    <div class="text-dark fw-semi-bold lh-1 fs-4 mb-3 mb-lg-0"><span class="icon-shape icon-xs rounded-circle bg-light-warning text-center me-2">
+                        <i class="mdi mdi-check text-dark-warning "></i></span><span class="align-middle">Constantly Improving</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
     </div>
-{% endblock %}
+    <!-- Section -->
+    <div class="py-8 py-lg-18 bg-light">
+        <div class="container">
+            <div class="row mb-8 justify-content-center">
+                <div class="col-lg-8 col-md-12 col-12 text-center">
+                    <!-- caption -->
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semi-bold ls-xl">The brains behind the brain</span>
+                    <h2 class="mb-2 display-4 fw-bold">Hello There! 👋, Meet The Team</h2>
+                    <p class="lead">
+                        CompBot is a fast, lightweight, cross-platform Chatbox created by an incredible team of developers 
+                        to give you the most up to date answers for your most daunting questions relating to the Faculty of
+                        Science & Technology.
+                    </p>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <!-- Features -->
+                    <div class="card mb-4">
+                        <!-- Card body -->
+                        <div class="card-body p-6">
+                            <div class="d-md-flex mb-4">
+                                <div class="mb-3 mb-md-0">
+                                    <!-- Img -->
+                                    <img src="../static/images/svg/feature-icon-1.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle">
+                                </div>
+                                <!-- Content -->
+                                <div class="ms-md-4">
+                                    <h2 class="fw-bold mb-1">Patrece Campbell <span class="badge bg-warning ms-2">Free</span></h2>
+                                    <p class="text-uppercase fs-6 fw-semi-bold mb-0">
+                                        <span class="text-dark">Courses - 1</span>
+                                        <span class="ms-3">6 Lessons</span>
+                                        <span class="ms-3">1 Hour 12 Min</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="mb-4 fs-4">In et tempus dui, in porta dolor. Donec molestie a purus ut interdum. Donec quis felis dignissim, luctus libero ornare.</p>
+                            <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#courseModal">View Patrece's Details <i class="fe fe-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <!-- Features -->
+                    <div class="card mb-4">
+                        <!-- Card body -->
+                        <div class="card-body p-6">
+                            <div class="d-md-flex mb-4">
+                                <div class="mb-3 mb-md-0">
+                                    <!-- Img -->
+                                    <img src="../static/images/svg/feature-icon-1.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle">
+                                </div>
+                                <!-- Content -->
+                                <div class="ms-md-4">
+                                    <h2 class="fw-bold mb-1">Kadian Davidson<span class="badge bg-warning ms-2">Free</span></h2>
+                                    <p class="text-uppercase fs-6 fw-semi-bold mb-0">
+                                        <span class="text-dark">Courses - 1</span>
+                                        <span class="ms-3">6 Lessons</span>
+                                        <span class="ms-3">1 Hour 12 Min</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="mb-4 fs-4">In et tempus dui, in porta dolor. Donec molestie a purus ut interdum. Donec quis felis dignissim, luctus libero ornare.</p>
+                            <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#courseModal">View Kadian's Details <i class="fe fe-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <!-- Features -->
+                    <div class="card mb-4">
+                        <!-- Card body -->
+                        <div class="card-body p-6">
+                            <div class="d-md-flex mb-4">
+                                <div class="mb-3 mb-md-0">
+                                    <!-- Img -->
+                                    <img src="../static/images/svg/feature-icon-1.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle">
+                                </div>
+                                <!-- Content -->
+                                <div class="ms-md-4">
+                                    <h2 class="fw-bold mb-1">Michel Davies <span class="badge bg-warning ms-2">Free</span></h2>
+                                    <p class="text-uppercase fs-6 fw-semi-bold mb-0">
+                                        <span class="text-dark">Courses - 1</span>
+                                        <span class="ms-3">6 Lessons</span>
+                                        <span class="ms-3">1 Hour 12 Min</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="mb-4 fs-4">In et tempus dui, in porta dolor. Donec molestie a purus ut interdum. Donec quis felis dignissim, luctus libero ornare.</p>
+                            <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#courseModal">View Michel's Details <i class="fe fe-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <!-- Features -->
+                    <div class="card mb-4">
+                        <!-- Card body -->
+                        <div class="card-body p-6">
+                            <div class="d-md-flex mb-4">
+                                <div class="mb-3 mb-md-0">
+                                    <!-- Img -->
+                                    <img src="../static/images/svg/feature-icon-1.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle">
+                                </div>
+                                <!-- Content -->
+                                <div class="ms-md-4">
+                                    <h2 class="fw-bold mb-1">Kabian Davidson <span class="badge bg-warning ms-2">Free</span></h2>
+                                    <p class="text-uppercase fs-6 fw-semi-bold mb-0">
+                                        <span class="text-dark">Courses - 1</span>
+                                        <span class="ms-3">6 Lessons</span>
+                                        <span class="ms-3">1 Hour 12 Min</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="mb-4 fs-4">In et tempus dui, in porta dolor. Donec molestie a purus ut interdum. Donec quis felis dignissim, luctus libero ornare.</p>
+                            <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#courseModal">View Kabian's Details <i class="fe fe-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section -->
+    <div class="py-8 py-lg-18">
+        <div class="container">
+            <div class="row mb-6 align-items-center justify-content-center">
+                <div class="col-md-10">
+                    <div class="row align-items-center ">
+                        <div class="col-xl-6 col-lg-7 col-md-12 col-12 order-1 text-center text-lg-start ">
+                            <!-- caption -->
+                            <span class="text-primary mb-3 d-block text-uppercase fw-semi-bold ls-xl">YOUR ARTIFICIAL INTELLIGENCE PAL</span>
+                            <h2 class="mb-2 display-4 fw-bold mb-3">Hi, I’m <span class="text-primary">CompBot</span>,
+                                <br>I will be helping you through The Faculty of Science & Technology.</h2>
+                            <p class="fs-3 pe-6">Neural networks generally perform supervised learning tasks, building knowledge from data sets where the right answer is provided in advance. The networks then learn by tuning themselves to find the right answer on their own, increasing the accuracy of their predictions.</p>
+
+                            <hr class="my-5">
+                            <!-- Counter -->
+                            <div class="row">
+                                <div class="col-sm mb-3 mb-lg-0">
+                                    <h2 class="h1 fw-bold mb-0 ls-xs">150+</h2>
+                                    <p class="mb-0">Questions Answered</p>
+                                </div>
+                                <div class="col-lg-5 col-sm mb-3 mb-lg-0">
+                                    <h2 class="h1 fw-bold mb-0 ls-xs">1,200+</h2>
+                                    <p class="mb-0">Students Assisted</p>
+                                </div>
+                                <div class="col-sm mb-3 mb-lg-0">
+                                    <h2 class="h1 fw-bold mb-0 ls-xs">12+</h2>
+                                    <p class="mb-0">Deep Nueral Networks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Img -->
+                        <div class="offset-xl-1 col-xl-5 col-lg-5 col-12 mb-6 mb-lg-0 order-lg-2 text-center ">
+                            <img src="../static/images/instructor/undraw_artificial_intelligence_re_enpp.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section -->
+    <div class="pb-8 pb-lg-18">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-12">
+                    <!-- Brand logo -->
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semi-bold ls-xl text-center">
+                        Learn more about Artificial Intelligence from trusted sources
+                    </span>
+                    <div class="row mt-8">
+                        <!-- logo -->
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-6 text-center mb-4 mb-xl-0">
+                            <a target="_blank" href="https://www.kaggle.com/general/205301">
+                                <img src="../static/images/brand/kaggle-ar21.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- logo -->
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-6 text-center mb-4 mb-xl-0">
+                            <img src="../static/images/brand/gray-logo-airbnb.svg" alt="">
+                        </div>
+                        <!-- logo -->
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-6 text-center mb-4 mb-xl-0">
+                            <img src="../static/images/brand/gray-logo-discord.svg" alt="">
+                        </div>
+                        <!-- logo -->
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-6 text-center mb-4 mb-xl-0">
+                            <img src="../static/images/brand/gray-logo-intercom.svg" alt="">
+                        </div>
+                        <!-- logo -->
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-6 text-center mb-4 mb-xl-0">
+                            <img src="../static/images/brand/gray-logo-pinterest.svg" alt="">
+                        </div>
+                        <!-- logo -->
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-6 text-center mb-4 mb-xl-0">
+                            <img src="../static/images/brand/gray-logo-netflix.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section -->
+    <div class="py-8 py-lg-18 bg-light">
+        <div class="container">
+            <div class="row mb-8 justify-content-center">
+                <div class="col-lg-6 col-md-12 col-12 text-center">
+                    <!-- caption -->
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semi-bold ls-xl">Dive Deeper into AI</span>
+                    <h2 class="mb-2 display-4 fw-bold ">The Code Behind CompBot </h2>
+                    <p class="lead">A quick synopsis of your new AI Bestfriend</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 mb-4 mb-lg-0">
+                    <!-- Card -->
+                    <div class="card shadow-lg">
+                        <!-- Card body -->
+                        <div class="card-body p-4 p-md-8 text-center">
+                            <i class="mdi mdi-48px mdi-format-quote-open text-light-primary lh-1"></i>
+                            <p class="lead text-dark mt-3">The bot do this first.</p>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="card-footer bg-primary text-center border-top-0">
+                            <div class="mt-n8"><img src="../static/images/avatar/avatar-1.jpg" alt="" class="rounded-circle border-primary avatar-xl border border-4"></div>
+                            <div class="mt-2 text-white">
+                                <h3 class="text-white mb-0">Gladys Colbert</h3>
+                                <p class="text-white-50 mb-1">Before</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <!-- Card -->
+                    <div class="card shadow-lg">
+                        <div class="card-body p-4 p-md-8 text-center">
+                            <i class="mdi mdi-48px mdi-format-quote-open text-light-info lh-1"></i>
+                            <p class="lead text-dark mt-3">The bot then do this.</p>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="card-footer bg-info text-center border-top-0">
+                            <div class="mt-n8"><img src="../static/images/avatar/avatar-2.jpg" alt="" class="rounded-circle border-info avatar-xl border border-4"></div>
+                            <div class="mt-2 text-white">
+                                <h3 class="text-white mb-0">Ella Jones</h3>
+                                <p class="text-white-50 mb-1">After</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-8 py-lg-18">
+        <div class="container">
+            <div class="row mb-8 justify-content-center">
+                <div class="col-lg-6 col-md-12 col-12 text-center">
+                    <!-- caption -->
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semi-bold ls-xl">Need to Know</span>
+                    <h2 class="mb-2 display-4 fw-bold ">Frequently Asked Questions.</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis non accumsan in, tempor dictum neque.</p>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center ">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="border-bottom py-3" id="headingOne">
+                            <h3 class="mb-0 fw-bold">
+                                <a href="#" class="d-flex align-items-center text-inherit text-decoration-none active" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="me-auto">
+                                        What is the cost of an online course
+                                    </span>
+                                    <span class="collapse-toggle ms-4">
+                                        <i class="fe fe-plus text-primary"></i>
+                                    </span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="py-3 fs-4">
+                                Create beautiful website with this Geeks UI template. Get started building a site today.
+                            </div>
+                        </div>
+                        <!-- Card  -->
+                        <!-- Card header  -->
+                        <div class="border-bottom py-3" id="headingTwo">
+                            <h3 class="mb-0 fw-bold">
+                                <a href="#" class="d-flex align-items-center text-inherit text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="me-auto">
+                                        What do I need to take a course?
+                                    </span>
+                                    <span class="collapse-toggle ms-4">
+                                        <i class="fe fe-plus text-primary"></i>
+                                    </span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="py-3 fs-4">
+                                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                        <!-- Card  -->
+                        <!-- Card header  -->
+                        <div class="border-bottom py-3 " id="headingThree">
+                            <h3 class="mb-0 fw-bold">
+                                <a href="#" class="d-flex align-items-center text-inherit text-decoration-none active" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="me-auto">
+                                        What do I receive for taking this course?
+                                    </span>
+                                    <span class="collapse-toggle ms-4">
+                                        <i class="fe fe-plus text-primary"></i>
+                                    </span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="py-3 fs-4">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                            </div>
+                        </div>
+                        <!-- Card  -->
+                        <!-- Card header  -->
+                        <div class="pt-3 " id="headingFour">
+                            <h3 class="mb-0 fw-bold">
+                                <a href="#" class="d-flex align-items-center text-inherit text-decoration-none active" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span class="me-auto">
+                                        What willI get if I subscribe to this Certificate?
+                                    </span>
+                                    <span class="collapse-toggle ms-4">
+                                        <i class="fe fe-plus text-primary"></i>
+                                    </span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="py-3 fs-4">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10 text-center">
+                        <a href="#" class="btn btn-outline-white">
+                            More questions? Try talking to <span class="text-primary">CompBot.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- call to action -->
+    <div class="py-lg-16 py-10 bg-dark" style="background: url(../static/images/background/course-graphics.svg)no-repeat; background-size: cover; background-position: top center">
+        <div class="container">
+            <!-- row -->
+            <div class="row justify-content-center text-center">
+                <div class="col-md-9 col-12">
+                    <!-- heading -->
+                    <h2 class="display-4 text-white">Join more than 1 million learners worldwide</h2>
+                    <p class="lead text-white px-lg-12 mb-6">Effective learning starts with assessment. Learning a new skill is hard work—Signal makes it easier.</p>
+                    <!-- button -->
+                    <div class="d-grid d-md-block">
+                        <a href="../sign-up.html" class="btn btn-primary mb-2 mb-md-0">Start Learning for Free</a>
+                        <a href="../sign-up.html" class="btn btn-info">Geeks for Business</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <!-- Payment Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center d-flex">
+                    <h4 class="modal-title" id="paymentModalLabel">
+                        Add New Payment Method
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+					</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div>
+                        <!-- Form -->
+                        <form class="row mb-4">
+                            <div class="mb-3 col-12 col-md-12 mb-4">
+                                <h5 class="mb-3">Credit / Debit card</h5>
+                                <!-- Radio button -->
+                                <div class="d-inline-flex">
+                                    <div class="form-check me-2">
+                                        <input type="radio" id="paymentRadioOne" name="paymentRadioOne" class="form-check-input" />
+                                        <label class="form-check-label" for="paymentRadioOne"><img
+											src="../static/images/creditcard/americanexpress.svg" alt="" /></label>
+                                    </div>
+                                    <!-- Radio button -->
+                                    <div class="form-check me-2">
+                                        <input type="radio" id="paymentRadioTwo" name="paymentRadioOne" class="form-check-input" />
+                                        <label class="form-check-label" for="paymentRadioTwo"><img
+											src="../static/images/creditcard/mastercard.svg" alt="" /></label>
+                                    </div>
+
+                                    <!-- Radio button -->
+                                    <div class="form-check">
+                                        <input type="radio" id="paymentRadioFour" name="paymentRadioOne" class="form-check-input" />
+                                        <label class="form-check-label" for="paymentRadioFour"><img src="../static/images/creditcard/visa.svg"
+											alt="" /></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Name on card -->
+                            <div class="mb-3 col-12 col-md-4">
+                                <label for="nameoncard" class="form-label">Name on card</label>
+                                <input id="nameoncard" type="text" class="form-control" name="nameoncard" placeholder="Name" required />
+                            </div>
+                            <!-- Month -->
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Month</label>
+                                <select class="selectpicker" data-width="100%">
+									<option value="">Month</option>
+									<option value="Jan">Jan</option>
+									<option value="Feb">Feb</option>
+									<option value="Mar">Mar</option>
+									<option value="Apr">Apr</option>
+									<option value="May">May</option>
+									<option value="June">June</option>
+									<option value="July">July</option>
+									<option value="Aug">Aug</option>
+									<option value="Sep">Sep</option>
+									<option value="Oct">Oct</option>
+									<option value="Nov">Nov</option>
+									<option value="Dec">Dec</option>
+								</select>
+                            </div>
+                            <!-- Year -->
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Year</label>
+                                <select class="selectpicker" data-width="100%">
+									<option value="">Year</option>
+									<option value="June">2018</option>
+									<option value="July">2019</option>
+									<option value="August">2020</option>
+									<option value="Sep">2021</option>
+									<option value="Oct">2022</option>
+								</select>
+                            </div>
+                            <!-- Card number -->
+                            <div class="mb-3 col-md-8 col-12">
+                                <label for="cc-mask" class="form-label">Card Number</label>
+                                <input type="text" class="form-control" id="cc-mask" data-inputmask="'mask': '9999 9999 9999 9999'" inputmode="numeric" placeholder="xxxx-xxxx-xxxx-xxxx" required />
+                            </div>
+                            <!-- CVV -->
+                            <div class="mb-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="cvv" class="form-label">CVV Code
+										<i class="fe fe-help-circle ms-1" data-bs-toggle="tooltip" data-placement="top"
+											title="A 3 - digit number, typically printed on the back of a card."></i></label>
+                                    <input type="password" class="form-control" name="cvv" id="cvv" placeholder="xxx" maxlength="3" inputmode="numeric" required />
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <div class="col-md-6 col-12">
+                                <button class="btn btn-primary" type="submit">
+									Add New Card
+								</button>
+                                <button class="btn btn-outline-white" type="button" data-bs-dismiss="modal">
+									Close
+								</button>
+                            </div>
+                        </form>
+                        <span><strong>Note:</strong> that you can later remove your card at
+							the account setting page.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addSectionModal" tabindex="-1" role="dialog" aria-labelledby="addSectionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="addSectionModalLabel">
+                        Add New Section
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+        </button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control mb-3" type="text" placeholder="Add new section" />
+                    <button class="btn btn-primary" type="Button">
+            Add New Section
+          </button>
+                    <button class="btn btn-outline-white" data-bs-dismiss="modal" aria-label="Close">
+            Close
+          </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addLectureModal" tabindex="-1" role="dialog" aria-labelledby="addLectureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="addLectureModalLabel">
+                        Add New Lecture
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+        </button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control mb-3" type="text" placeholder="Add new lecture" />
+                    <button class="btn btn-primary" type="Button">
+            Add New Lecture
+          </button>
+                    <button class="btn btn-outline-white" data-bs-dismiss="modal" aria-label="Close">
+            Close
+          </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="newCatgory" tabindex="-1" role="dialog" aria-labelledby="newCatgoryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title mb-0" id="newCatgoryLabel">
+                        Create New Category
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 mb-2">
+                            <label class="form-label" for="title">Title<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Write a Category" id="title" required>
+                            <small>Field must contain a unique value</small>
+                        </div>
+                        <div class="mb-3 mb-2">
+                            <label class="form-label">Slug</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="slug">https://example.com</span>
+                                </div>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="slug" placeholder="designcourses" required>
+                            </div>
+                            <small>Field must contain a unique value</small>
+                        </div>
+                        <div class="mb-3 mb-2">
+                            <label class="form-label">Parent</label>
+                            <select class="selectpicker" data-width="100%">
+                <option value="">Select</option>
+                <option value="Course">Course</option>
+                <option value="Tutorial">Tutorial</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Company">Company</option>
+              </select>
+                        </div>
+                        <div class="mb-3 mb-3">
+                            <label class="form-label">Description</label>
+                            <div id="editor">
+                                <br>
+                                <h4>One Ring to Rule Them All</h4>
+                                <br>
+                                <p>
+                                    Three Rings for the
+                                    <i> Elven-kingsunder</i> the sky,
+                                    <br> Seven for the
+                                    <u>Dwarf-lords</u> in halls of stone, Nine for Mortal Men,
+                                    <br> doomed to die, One for the Dark Lord on his dark throne.
+                                    <br> In the Land of Mordor where the Shadows lie.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Enabled</label>
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input" id="customSwitch1" checked>
+                                <label class="form-check-label" for="customSwitch1"></label>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Add New Category</button>
+                            <button type="button" class="btn btn-outline-white" data-bs-dismiss="modal">
+                Close
+              </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+
+
+    <!-- Course Modal -->
+    <div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header py-4 align-items-lg-center">
+                    <div class="d-lg-flex">
+                        <div class="mb-3 mb-lg-0">
+                            <img src="../static/images/svg/feature-icon-1.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle">
+                        </div>
+                        <div class="ms-lg-4">
+                            <h2 class="fw-bold mb-md-1 mb-3">Introduction to JavaScript <span class="badge bg-warning ms-2">Free</span></h2>
+                            <p class="text-uppercase fs-6 fw-semi-bold mb-0"><span class="text-dark">Courses -
+                  1</span> <span class="ms-3">6 Lessons</span> <span class="ms-3">1 Hour 12 Min</span></p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+          </button>
+                </div>
+                <div class="modal-body">
+                    <h3>In this course you will learn:</h3>
+                    <p class="fs-4">Vanilla JS is a fast, lightweight, cross-platform framework for building incredible, powerful JavaScript applications.</p>
+                    <ul class="list-group list-group-flush">
+                        <!-- List group item -->
+                        <li class="list-group-item ps-0">
+                            <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                <div class="text-truncate">
+                                    <span class="icon-shape bg-light text-primary icon-sm rounded-circle me-2"><i
+                      class="mdi mdi-play fs-4"></i></span>
+                                    <span>Introduction</span>
+                                </div>
+                                <div class="text-truncate">
+                                    <span>1m 7s</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- List group item -->
+                        <li class="list-group-item ps-0">
+                            <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                <div class="text-truncate">
+                                    <span class="icon-shape bg-light text-primary icon-sm rounded-circle me-2"><i
+                      class="mdi mdi-play fs-4"></i></span>
+                                    <span>Installing Development Software</span>
+                                </div>
+                                <div class="text-truncate">
+                                    <span>3m 11s</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- List group item -->
+                        <li class="list-group-item ps-0">
+                            <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                <div class="text-truncate">
+                                    <span class="icon-shape bg-light text-primary icon-sm rounded-circle me-2"><i
+                      class="mdi mdi-play fs-4"></i></span>
+                                    <span>Hello World Project from GitHub</span>
+                                </div>
+                                <div class="text-truncate">
+                                    <span>2m 33s</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- List group item -->
+                        <li class="list-group-item ps-0">
+                            <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                <div class="text-truncate">
+                                    <span class="icon-shape bg-light text-primary icon-sm rounded-circle me-2"><i
+                      class="mdi mdi-play fs-4"></i></span>
+                                    <span>Our Sample Javascript Files</span>
+                                </div>
+                                <div class="text-truncate">
+                                    <span>22m 30s</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- new chat modal-->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="newchatModal" tabindex="-1" role="dialog" aria-labelledby="newchatModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered " role="document">
+            <div class="modal-content ">
+                <div class="modal-header align-items-center">
+                    <h4 class="mb-0" id="newchatModalLabel">Create New Chat</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                 </button>
+                </div>
+                <div class="modal-body px-0">
+                    <!-- contact list -->
+                    <ul class="list-unstyled contacts-list mb-0">
+                        <!-- chat item -->
+                        <li class="py-3 px-4 chat-item contacts-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-link contacts-link">
+                                    <!-- media -->
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md avatar-indicators avatar-away">
+                                            <img src="../static/images/avatar/avatar-5.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <!-- media body -->
+                                        <div class=" ms-2">
+                                            <h5 class="mb-0">Pete Martin</h5>
+                                            <p class="mb-0 text-muted">On going description of group...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <small class="text-muted">2/10/2021</small>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <!-- chat item -->
+                        <li class="py-3 px-4 chat-item contacts-item">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-link contacts-link">
+                                    <!-- media -->
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md avatar-indicators avatar-offline">
+                                            <img src="../static/images/avatar/avatar-9.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <!-- media body -->
+                                        <div class=" ms-2">
+                                            <h5 class="mb-0">Olivia Cooper</h5>
+                                            <p class="mb-0 text-muted">On going description of group...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <small class="text-muted">2/3/2021</small>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <!-- chat item -->
+                        <li class="py-3 px-4 chat-item contacts-item">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-link contacts-link">
+                                    <!-- media -->
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md avatar-indicators avatar-busy">
+                                            <img src="../static/images/avatar/avatar-19.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <!-- media body -->
+                                        <div class=" ms-2">
+                                            <h5 class="mb-0">Jamarcus Streich</h5>
+                                            <p class="mb-0 text-muted">Start design system for UI.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <small class="text-muted">1/24/2021</small>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <!-- chat item -->
+                        <li class="py-3 px-4 chat-item contacts-item">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-link contacts-link">
+                                    <!-- media -->
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md avatar-indicators avatar-busy">
+                                            <img src="../static/images/avatar/avatar-12.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <!-- media body -->
+                                        <div class=" ms-2">
+                                            <h5 class="mb-0">Lauren Wilson</h5>
+                                            <p class="mb-0 text-muted">Start design system for UI...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <small class="text-muted">3/3/2021</small>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <!-- chat item -->
+                        <li class="py-3 px-4 chat-item contacts-item">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-link contacts-link">
+                                    <!-- media -->
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md avatar-indicators avatar-online">
+                                            <img src="../static/images/avatar/avatar-14.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <!-- media body -->
+                                        <div class=" ms-2">
+                                            <h5 class="mb-0">User Name</h5>
+                                            <p class="mb-0 text-muted">On going description of group..
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <small class="text-muted">1/5/2021</small>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <!-- chat item -->
+                        <li class="py-3 px-4 chat-item contacts-item">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-link contacts-link">
+                                    <!-- media -->
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md avatar-indicators avatar-online">
+                                            <img src="../static/images/avatar/avatar-15.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <!-- media body -->
+                                        <div class=" ms-2">
+                                            <h5 class="mb-0">Rosalee Roberts</h5>
+                                            <p class="mb-0 text-muted">On going description of group..
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <small class="text-muted">1/14/2021</small>
+                                </div>
+                            </div>
+
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- add task -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="taskModal" tabindex="-1" role="dialog" aria-labelledby="taskModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="taskModalLabel">Create New Task</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="mb-2 col-12">
+                            <label for="taskTitle" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="taskTitle" placeholder="Title" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="priority" class="form-label">Priority</label>
+                            <select class="selectpicker" data-width="100%" id="priority">
+                            <option selected>Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+
+                        </select>
+                        </div>
+                        <div class="mb-2 col-6">
+                            <label for="date" class="form-label">Due Date</label>
+                            <input class="form-control flatpickr" type="text" placeholder="Select Date" id="date" required>
+                        </div>
+                        <div class="mb-2 col-12">
+                            <label for="descriptions" class="form-label">Descriptions</label>
+                            <textarea class="form-control" id="descriptions" rows="3" required></textarea>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="assignTo" class="form-label">Assign To</label>
+                            <select class="selectpicker" id="assignTo" data-width="100%">
+                            <option selected>Codescandy</option>
+                            <option value="John Deo">John Deo</option>
+                            <option value="Misty">Misty</option>
+                            <option value="Simon Ray">Simon Ray</option>
+
+                        </select>
+                        </div>
+
+
+
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary
+                            me-2" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Create
+                            Task</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <!-- footer -->
+    <div class="pt-lg-10 pt-5 footer bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- about company -->
+                    <div class="mb-4">
+                        <img src="../static/images/brand/logo/logo.svg" alt="">
+                        <div class="mt-4">
+                            <p>Geek is feature-rich components and beautifully Bootstrap UIKit for developers, built with bootstrap responsive framework.</p>
+                            <!-- social media -->
+                            <div class="fs-4 mt-4">
+                                <a href="#" class="mdi mdi-facebook fs-4 text-muted me-2"></a>
+                                <a href="#" class="mdi mdi-twitter text-muted me-2"></a>
+                                <a href="#" class="mdi mdi-instagram text-muted "></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+                    <div class="mb-4">
+                        <!-- list -->
+                        <h3 class="fw-bold mb-3">Company</h3>
+                        <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                            <li><a href="#" class="nav-link">About</a></li>
+                            <li><a href="#" class="nav-link">Pricing</a></li>
+                            <li><a href="#" class="nav-link">Blog</a></li>
+                            <li><a href="#" class="nav-link">Careers</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="mb-4">
+                        <!-- list -->
+                        <h3 class="fw-bold mb-3">Support</h3>
+                        <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                            <li><a href="#" class="nav-link">Help and Support</a></li>
+                            <li><a href="#" class="nav-link">Become Instructor</a></li>
+                            <li><a href="#" class="nav-link">Get the app</a></li>
+                            <li><a href="#" class="nav-link">FAQ’s</a></li>
+                            <li><a href="#" class="nav-link">Tutorial</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <!-- contact info -->
+                    <div class="mb-4">
+                        <h3 class="fw-bold mb-3">Get in touch</h3>
+                        <p>339 McDermott Points Hettingerhaven, NV 15283</p>
+                        <p class="mb-1">Email: <a href="#">support@geeksui.com</a></p>
+                        <p>Phone: <span class="text-dark fw-semi-bold">(000) 123 456 789</span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center g-0 border-top py-2 mt-6">
+                <!-- Desc -->
+                <div class="col-lg-4 col-md-5 col-12">
+                    <span>© 2022 Geeks-UI, Inc. All Rights Reserved</span>
+                </div>
+
+                <!-- Links -->
+                <div class="col-12 col-md-7 col-lg-8 d-md-flex justify-content-end">
+                    <nav class="nav nav-footer">
+                        <a class="nav-link ps-0" href="#">Privacy Policy</a>
+                        <a class="nav-link px-2 px-md-3" href="#">Cookie Notice  </a>
+                        <a class="nav-link d-none d-lg-block" href="#">Do Not Sell My Personal Information </a>
+                        <a class="nav-link" href="#">Terms of Use</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <!-- Libs JS -->
+    <script src="../static/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../static/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/libs/odometer/odometer.min.js"></script>
+    <script src="../static/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="../static/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../static/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="../static/libs/inputmask/dist/jquery.inputmask.min.js"></script>
+    <script src="../static/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="../static/libs/quill/dist/quill.min.js"></script>
+    <script src="../static/libs/file-upload-with-preview/dist/file-upload-with-preview.min.js"></script>
+    <script src="../static/libs/dragula/dist/dragula.min.js"></script>
+    <script src="../static/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="../static/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="../static/libs/jQuery.print/jQuery.print.js"></script>
+    <script src="../static/libs/prismjs/prism.js"></script>
+    <script src="../static/libs/prismjs/components/prism-scss.min.js"></script>
+    <script src="../static/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+    <script src="../static/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../static/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../static/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+    <script src="../static/libs/typed.js/lib/typed.min.js"></script>
+    <script src="../static/libs/jsvectormap/dist/js/jsvectormap.min.js"></script>
+    <script src="../static/libs/jsvectormap/dist/maps/world.js"></script>
+    <script src="../static/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../static/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../static/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../static/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+    <script src="../static/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../static/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../static/libs/fullcalendar/main.min.js"></script>
+    <script src="../static/libs/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="../static/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="../static/libs/nouislider/dist/nouislider.min.js"></script>
+    <script src="../static/libs/wnumb/wNumb.min.js"></script>
+    <script src="../static/libs/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- CDN File for moment -->
+    <script src='https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js'></script>
+
+
+
+
+    <!-- Theme JS -->
+    <script src="../static/js/theme.min.js"></script>
+
+
+
+
+</body>
+
+</html>
