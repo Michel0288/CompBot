@@ -650,7 +650,7 @@
                             <span>Don’t have an account? <a href="#" data-bs-toggle="modal" class="ms-1">Sign up</a></span>
                           </div>
                           <!-- Form -->
-                          <form method="post" action="chat/compbot">
+                          <form>
                                 <!-- Username -->
                             <div class="mb-3">
                               <label for="email-login" class="form-label">Email</label>
@@ -666,7 +666,7 @@
                             <div>
                                 <!-- Button -->
                             <div class="d-grid">
-                              <button type="submit" class="btn btn-primary ">Sign in</button>
+                              <button id="login" type="submit" class="btn btn-primary ">Sign in</button>
                             </div>
                             </div>
                           </form>
@@ -734,5 +734,10 @@
 
     <!-- Theme JS -->
     <script src="../static/js/theme.min.js"></script>
+    <script>
+        $('#login').on("click", ()=>{
+            window.location.href="chat/compbot"
+        });
+    </script>
 </body>
 </html>
