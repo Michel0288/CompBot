@@ -340,7 +340,7 @@
 
                                                         <div class="d-flex align-items-center">
                                                             <div style="color: #000" line-clamp me-auto>
-                                                                Hey, Michel! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology
+                                                                Hey, {{name}}! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology
                                                             </div>
 
                                                             <div class="badge badge-circle bg-primary ms-5">
@@ -555,7 +555,7 @@
                                             <div class="message-body">
                                                 <div class="message-content">
                                                     <div class="message-text">
-                                                        <p>Hey, Michel! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology.
+                                                        <p>Hey, {{name}}! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology.
                                                             <br/> <br/> I understand simple questions asked one at a time. I don’t understand follow-up questions.
                                                         </p>
                                                     </div>
@@ -856,7 +856,7 @@
                                     <img class="avatar-img" src="../static/assets/img/avatars/1.jpg" alt="#">
                                 </div>
 
-                                <h4 class="mb-1">Michel Davies</h4>
+                                <h4 class="mb-1">{{session['name']}}</h4>
                                 <p>last seen 2 seconds ago</p>
                             </div>
                         </div>
@@ -959,6 +959,12 @@
         <script src="../static/assets/js/template.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
+            $(document).on('keypress',function(e) {
+                if(e.which == 13) {
+                    e.preventDefault();
+                }
+            });
+
             $('#id-member-1').on("click", ()=>{
                 $('#id-member-2').prop('checked', false);
             });
