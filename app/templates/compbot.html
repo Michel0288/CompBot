@@ -340,7 +340,7 @@
 
                                                         <div class="d-flex align-items-center">
                                                             <div style="color: #000" line-clamp me-auto>
-                                                                Hey, {{name}}! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology
+                                                                Hey, {{session['name']}}! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology
                                                             </div>
 
                                                             <div class="badge badge-circle bg-primary ms-5">
@@ -547,6 +547,7 @@
 
                                     <!-- Message -->
                                     <div class="message">
+                                        {% for row in data %}
                                         <a href="#" class="avatar avatar-responsive">
                                             <img class="avatar-img" src="../static/assets/img/avatars/2.jpg" alt="">
                                         </a>
@@ -555,7 +556,7 @@
                                             <div class="message-body">
                                                 <div class="message-content">
                                                     <div class="message-text">
-                                                        <p>Hey, {{name}}! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology.
+                                                        <p>Hey, {{session['name']}}! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology.
                                                             <br/> <br/> I understand simple questions asked one at a time. I don’t understand follow-up questions.
                                                         </p>
                                                     </div>
@@ -572,7 +573,7 @@
                                                             <!-- List group -->
                                                             <div class="list-group" id="first" role="tablist">
                                                               <a id="general_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#general" role="tab">General</a>
-                                                              <a style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#departments" role="tab">Departments</a>
+                                                              <a id="departments_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#departments" role="tab">Departments</a>
                                                             </div>
                                                             <!-- Tab panes departments-->
                                                             <div class="tab-content">
@@ -781,6 +782,7 @@
                                                 <span class="extra-small text-muted">08:45 PM</span>
                                             </div>
                                         </div>
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>
@@ -798,7 +800,7 @@
                             <form method="POST" class="chat-form rounded-pill bg-dark" data-emoji-form="">
                                 <div class="row align-items-center gx-0">
                                     <div class="col-auto">
-                                        <a href="#" class="btn btn-icon btn-link text-body rounded-circle d-none" id="dz-btn">
+                                        <a href="#" class="btn btn-icon btn-link text-body rounded-circle" id="menu-btn">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
                                         </a>
                                     </div>
@@ -965,6 +967,10 @@
                 }
             });
 
+            $('#menu-btn').on("click", ()=>{
+                location.reload();
+            });
+            
             $('#id-member-1').on("click", ()=>{
                 $('#id-member-2').prop('checked', false);
             });

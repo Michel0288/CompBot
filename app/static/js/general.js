@@ -2,6 +2,7 @@ $('#first').on("click", ()=>{
     $('#message-to-send').prop("disabled", true);
     // GENERAL
     if($('#general.tab-pane').hasClass('active')){
+        $('#departments_options').prop("disabled",true);
         $('#message-to-send').prop("disabled", false);
         let message = $("#message-to-send");
         let sender = $("#message-sender");
