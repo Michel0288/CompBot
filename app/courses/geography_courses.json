@@ -1,0 +1,31 @@
+{
+    "intents": [
+    {"tag": "GEOG1131",
+    "patterns": ["GEOG1131","what is GEOG1131 about?","Human Geography 1: Population, Migration & Human Settlement","what is Human Geography 1: Population, Migration & Human Settlement?","How many credits does Human Geography 1: Population, Migration & Human Settlement have?","How many credits does GEOG1131 have?"],
+    "responses": [" LEVEL: I \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: FST Matriculation Requirements and Geography at CSEC or its equivalent \\n To see more about the course visit https://www.mona.uwi.edu/dogg/courses/geog1131."]
+    },
+    {"tag": "GEOG1132",
+    "patterns": ["GEOG1132","what is GEOG1132 about?","Human Geography 2: Population, Migration & Human Settlement","what is Human Geography 2: Population, Migration & Human Settlement?","How many credits does Human Geography 2: Population, Migration & Human Settlement have?","How many credits does GEOG1132 have?"],
+    "responses": [" LEVEL: I \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: FST Matriculation Requirements and Geography at CSEC or its equivalent \\n To see more about the course visit https://www.mona.uwi.edu/dogg/courses/geog1132."]
+    },
+    {"tag": "GEOG1231",
+    "patterns": ["GEOG1231","what is GEOG1231 about?","Earth Environments 1: Geomorphology & Soils","what is Earth Environments 1: Geomorphology & Soils?","How many credits does Earth Environments 1: Geomorphology & Soils have?"],
+    "responses": [" LEVEL: I \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: FST Matriculation Requirements and Geography at CSEC or its equivalent \\n To see more about the course visit https://www.mona.uwi.edu/dogg/courses/geog1231"]
+    },
+    {"tag": "GEOG1232",
+    "patterns": ["GEOG1232","what is GEOG1232 about?","Earth Environments 2: Geomorphology & Soils","what is Earth Environments 2: Geomorphology & Soils?","How many credits does Earth Environments 2: Geomorphology & Soils have?"],
+    "responses": [" LEVEL: I \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: FST Matriculation Requirements and Geography at CSEC or its equivalent \\n To see more about the course visit https://www.mona.uwi.edu/dogg/courses/geog1232"]
+    },
+    {"tag": "GEOG2131",
+    "patterns": ["GEOG2131","how many credits does GEOG2131 have?","what is GEOG2131 about?","Urban Geographies","what is Urban Geographies?","How many credits does Urban Geographies have?"],
+    "responses": [" LEVEL: I \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: GEOG1131 and GEOG1132 \\n To see more about the course visit https://www.mona.uwi.edu/dogg/courses/GEOG2131"]
+    },
+    {"tag": "GEOG1232",
+    "patterns": ["GEOG1232","what is GEOG1232 about?","Earth Environments 2: Geomorphology & Soils","what is Earth Environments 2: Geomorphology & Soils?","How many credits does Earth Environments 2: Geomorphology & Soils have?"],
+    "responses": [" LEVEL: I \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: PREREQUISITES: GEOG1131 and GEOG1132 \\n To see more about the course visit https://www.mona.uwi.edu/dogg/courses/GEOG2132"]
+    },
+
+    ]
+}
+
+
