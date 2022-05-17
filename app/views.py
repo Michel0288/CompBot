@@ -36,9 +36,9 @@ def register():
         cur.execute("INSERT INTO user_profiles(full_name, username, email, password) VALUES (%s, %s, %s, %s)", (name, username, email, password))
         mysql.connection.commit()
 
-        cur.execute("CREATE TABLE {{username}}_compbot (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));")
+        # cur.execute("CREATE TABLE `%s`_compbot (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));"% str(username))
 
-        cur.execute("CREATE TABLE {{username}}_admin (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));")
+        # cur.execute("CREATE TABLE `%s`_admin (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));"% str(username))
         
         cur.close()
 
@@ -51,59 +51,59 @@ def register():
 
 @app.route("/login/", methods=["POST"])
 def login():
-    if request.method=="POST":
-        email = request.form['email-login']
-        password = request.form['password-login']
+    # if request.method=="POST":
+    #     email = request.form['email-login']
+    #     password = request.form['password-login']
         
-        cur = mysql.connection.cursor()
-        cur.execute('SELECT * FROM user_profiles WHERE email = %s AND password = %s', (email, password,))
-        # Fetch one record and return result
-        account = cur.fetchone()
-        cur.close()
+    #     cur = mysql.connection.cursor()
+    #     cur.execute('SELECT * FROM user_profiles WHERE email = %s AND password = %s', (email, password,))
+    #     # Fetch one record and return result
+    #     account = cur.fetchone()
+    #     cur.close()
 
-        if account:
-            # Create session data, we can access this data in other routes
-            session['loggedin'] = True
-            session['name'] = account['fullname']
-            session['username'] = account['username']
-            return redirect(url_for('chat_compbot', name=session['name']))
+    #     if account:
+    #         # Create session data, we can access this data in other routes
+    #         session['loggedin'] = True
+    #         session['name'] = account['fullname']
+    #         session['username'] = account['username']
+    return redirect(url_for('chat_compbot'))
 
-    return redirect(url_for('home'))
+    # return redirect(url_for('home'))
 
 @app.route('/chat/compbot', methods=["GET","POST"])
 def chat_compbot():
-    username = session['username']
-    cur = mysql.connection.cursor()
-    cur.execute('SELECT * FROM '+str({{username}})+'_compbot')
-    # Fetch one record and return result
-    data = cur.fetchall()
-    cur.close()
+    # username = session['username']
+    # cur = mysql.connection.cursor()
+    # cur.execute('SELECT * FROM '+str({{username}})+'_compbot')
+    # # Fetch one record and return result
+    # data = cur.fetchall()
+    # cur.close()
     """Render the website's chat page for compbot"""
     if request.method == 'POST':
         userinput = request.form['userinput']
         response = chat.chatbot_response()
         return jsonify({"response": response })
-    return render_template('compbot.html', data=data)
+    return render_template('compbot.html')
 
 @app.route('/chat/admin')
 def chat_admin():
     """Render the website's chat page for admin"""
     return render_template('admin.html')
 
-@app.route("/chat/add/", methods=["POST"])
-def chat_add():
-    if request.method=="POST":
-        email = request.form['email-login']
-        password = request.form['password-login']
+# @app.route("/chat/add/", methods=["POST"])
+# def chat_add():
+#     if request.method=="POST":
+#         email = request.form['email-login']
+#         password = request.form['password-login']
         
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO "+session['username']+"_compbot (message, email, password) VALUES (%s, %s, %s, %s)", (name, email, username, password))
-        mysql.connection.commit()
-        # Fetch one record and return result
-        account = cur.fetchone()
-        cur.close()
-    """Render the website's chat page for admin"""
-    return render_template('admin.html')
+#         cur = mysql.connection.cursor()
+#         cur.execute("INSERT INTO "+session['username']+"_compbot (message, email, password) VALUES (%s, %s, %s, %s)", (name, email, username, password))
+#         mysql.connection.commit()
+#         # Fetch one record and return result
+#         account = cur.fetchone()
+#         cur.close()
+#     """Render the website's chat page for admin"""
+#     return render_template('admin.html')
 
 # @app.route("/logout")
 # @login_required
