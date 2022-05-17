@@ -23,7 +23,7 @@
     {"tag": "GEOG1232",
     "patterns": ["GEOG1232","what is GEOG1232 about?","Earth Environments 2: Geomorphology & Soils","what is Earth Environments 2: Geomorphology & Soils?","How many credits does Earth Environments 2: Geomorphology & Soils have?"],
     "responses": [" LEVEL: I \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: PREREQUISITES: GEOG1131 and GEOG1132 \\n To see more about the course visit https://www.mona.uwi.edu/dogg/courses/GEOG2132"]
-    },
+    }
 
     ]
 }

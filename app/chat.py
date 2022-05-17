@@ -1,3 +1,4 @@
+from flask import request
 import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -5,10 +6,10 @@ import pickle
 import numpy as np
 
 from keras.models import load_model
-model = load_model('chatbot_model.h5')
+model = load_model('general.h5')
 import json
 import random
-intents = json.loads(open('app/data.json', encoding='utf-8').read())
+intents = json.loads(open('app/general/general.json', encoding='utf-8').read())
 words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
 
@@ -59,12 +60,9 @@ def getResponse(ints, intents_json):
     return result
 
 def chatbot_response():
-    print("Chat with CompBot (type quit to stop)!")
     while True:
-        msg = input("You: ")
-        if msg.lower() == "quit":
-            break
-        ints = predict_class(msg, model)
-        res = getResponse(ints, intents)
-        print(res)
-chatbot_response()
+        if request.method == 'POST':
+            msg = request.form['userinput']
+            ints = predict_class(msg, model)
+            res = getResponse(ints, intents)
+            return res
