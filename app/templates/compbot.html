@@ -555,7 +555,9 @@
                                             <div class="message-body">
                                                 <div class="message-content">
                                                     <div class="message-text">
-                                                        <p>Hey, Michel! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology</p>
+                                                        <p>Hey, Michel! I am CompBot, your friendly neighbourhood Artificial Intelligence for the Faculty of Science and Technology.
+                                                            <br/> <br/> I understand simple questions asked one at a time. I don’t understand follow-up questions.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -566,7 +568,181 @@
                                                 <div class="message-content">
                                                     <div class="message-text">
                                                         <p>Please select one of the categories:</p>
-                                                        
+                                                        <div role="tabpanel">
+                                                            <!-- List group -->
+                                                            <div class="list-group" id="first" role="tablist">
+                                                              <a id="general_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#general" role="tab">General</a>
+                                                              <a style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#departments" role="tab">Departments</a>
+                                                            </div>
+                                                            <!-- Tab panes departments-->
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane" id="general" role="tabpanel">
+                                                                    <br/>
+                                                                    <p>Please type in your question.</p>
+                                                                </div>
+                                                                <div class="tab-pane" id="departments" role="tabpanel">
+                                                                    <br/>
+                                                                    <p>Please select one of the departments:</p>
+                                                                    <div role="tabpanel">
+                                                                        <div class="list-group" id="second" role="tablist">
+                                                                            <a style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#chemistry" role="tab">Chemistry</a>
+                                                                            <a style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#computing" role="tab">Computing</a>
+                                                                            <a style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#geography_geology" role="tab">Geography and Geology</a>
+                                                                            <a style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#life_sciences" role="tab">Life Sciences</a>
+                                                                            <a style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#mathematics" role="tab">Mathematics</a>
+                                                                            <a style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#physics" role="tab">Physics</a>
+                                                                        </div>
+
+                                                                        <!-- Tab panes specific department -->
+                                                                        <div class="tab-content">
+                                                                            <div class="tab-pane" id="chemistry" role="tabpanel">
+                                                                                <br/>
+                                                                                <p>Please select one of the chemistry options below:</p>
+                                                                                <div class="list-group" id="third" role="tablist">
+                                                                                    <a id="chemistry_major_programmes_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#chemistry_major_programmes" role="tab">Majors/Programmes</a>
+                                                                                    <a id="chemistry_courses_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#chemistry_courses" role="tab">Courses</a>
+                                                                                    <a id="chemistry_lecturers_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#chemistry_lecturers" role="tab">lecturers</a>
+                                                                                </div>
+
+                                                                                <div class="tab-content">
+                                                                                    <div class="tab-pane" id="chemistry_major_programmes" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating chemistry majors/programmes.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="chemistry_courses" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating chemistry courses.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="chemistry_lecturers" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating chemistry lecturers.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane" id="computing" role="tabpanel">
+                                                                                <br/>
+                                                                                <p>Please select one of the computing options below:</p>
+                                                                                <div class="list-group" id="fourth" role="tablist">
+                                                                                    <a id="computing_major_programmes_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#computing_major_programmes" role="tab">Majors/Programmes</a>
+                                                                                    <a id="computing_courses_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#computing_courses" role="tab">Courses</a>
+                                                                                    <a id="computing_lecturers_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#computing_lecturers" role="tab">lecturers</a>
+                                                                                </div>
+
+                                                                                <div class="tab-content">
+                                                                                    <div class="tab-pane" id="computing_major_programmes" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating computing majors/programmes.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="computing_courses" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating computing courses.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="computing_lecturers" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating computing lecturers.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane" id="geography_geology" role="tabpanel">
+                                                                                <br/>
+                                                                                <p>Please select one of the geopgraphy/geology options below:</p>
+                                                                                <div class="list-group" id="fifth" role="tablist">
+                                                                                    <a id="geography_geology_major_programmes_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#geography_geology_major_programmes" role="tab">Majors/Programmes</a>
+                                                                                    <a id="geography_geology_courses_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#geography_geology_courses" role="tab">Courses</a>
+                                                                                    <a id="geography_geology_lecturers_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#geography_geology_lecturers" role="tab">lecturers</a>
+                                                                                </div>
+
+                                                                                <div class="tab-content">
+                                                                                    <div class="tab-pane" id="geography_geology_major_programmes" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating geography/geology majors/programmes.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="geography_geology_courses" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating geography/geology courses.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="geography_geology_lecturers" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating geography/geology lecturers.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane" id="life_sciences" role="tabpanel">
+                                                                                <br/>
+                                                                                <p>Please select one of the life sciences options below:</p>
+                                                                                <div class="list-group" id="sixth" role="tablist">
+                                                                                    <a id="life_sciences_major_programmes_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#life_sciences_major_programmes" role="tab">Majors/Programmes</a>
+                                                                                    <a id="life_sciences_courses_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#life_sciences_courses" role="tab">Courses</a>
+                                                                                    <a id="life_sciences_lecturers_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#life_sciences_lecturers" role="tab">lecturers</a>
+                                                                                </div>
+
+                                                                                <div class="tab-content">
+                                                                                    <div class="tab-pane" id="life_sciences_major_programmes" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating life sciences majors/programmes.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="life_sciences_courses" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating life sciences courses.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="life_sciences_lecturers" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating life sciences lecturers.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane" id="mathematics" role="tabpanel">
+                                                                                <br/>
+                                                                                <p>Please select one of the mathematics options below:</p>
+                                                                                <div class="list-group" id="seventh" role="tablist">
+                                                                                    <a id="mathematics_major_programmes_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#mathematics_major_programmes" role="tab">Majors/Programmes</a>
+                                                                                    <a id="mathematics_courses_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#mathematics_courses" role="tab">Courses</a>
+                                                                                    <a id="mathematics_lecturers_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#mathematics_lecturers" role="tab">lecturers</a>
+                                                                                </div>
+
+                                                                                <div class="tab-content">
+                                                                                    <div class="tab-pane" id="mathematics_major_programmes" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating mathematics majors/programmes.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="mathematics_courses" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating mathematics courses.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="mathematics_lecturers" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating mathematics lecturers.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane" id="physics" role="tabpanel">
+                                                                                <br/>
+                                                                                <p>Please select one of the physics options below:</p>
+                                                                                <div class="list-group" id="eighth" role="tablist">
+                                                                                    <a id="physics_major_programmes_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#physics_major_programmes" role="tab">Majors/Programmes</a>
+                                                                                    <a id="physics_courses_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#physics_courses" role="tab">Courses</a>
+                                                                                    <a id="physics_lecturers_options" style="color: black" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#physics_lecturers" role="tab">lecturers</a>
+                                                                                </div>
+                                                                                <div class="tab-content">
+                                                                                    <div class="tab-pane" id="physics_major_programmes" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating physics majors/programmes.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="physics_courses" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating physics courses.</p>
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="physics_lecturers" role="tabpanel">
+                                                                                        <br/>
+                                                                                        <p>Please type in your question relating physics lecturers.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -599,7 +775,7 @@
 
                                     <div class="col">
                                         <div class="input-group">
-                                            <textarea id="message-to-send" style="color: #000" class="form-control px-4" placeholder="Type your message..." rows="1" data-emoji-input="" data-autosize="true"></textarea>
+                                            <textarea disabled id="message-to-send" style="color: #000" class="form-control px-4" placeholder="Type your message..." rows="1" data-emoji-input="" data-autosize="true"></textarea>
 
                                             <a href="#" class="input-group-text text-body pe-0 d-none" data-emoji-btn="">
                                                 <span class="icon icon-lg">
@@ -753,79 +929,6 @@
         <script src="../static/assets/js/template.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
-            let message = $("#message-to-send");
-            let sender = $("#message-sender");
-            sender.on("click", ()=>{
-                if($.trim(message.val()).length != 0){
-                    $("#chatbox").append(`
-                        <!-- THIS IS YOUR MESSAGE -->
-                        <div class="message message-out">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-profile" class="avatar avatar-responsive">
-                                <img class="avatar-img" src="../static/assets/img/avatars/1.jpg" alt="">
-                            </a>
-
-                            <div class="message-inner">
-                                <div class="message-body">
-                                    <div class="message-content">
-                                        <div class="message-text">
-                                            <p>`+ $.trim(message.val()) +`</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="message-footer">
-                                    <span class="extra-small text-muted">`+ new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) +`</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- THIS IS THE BOT TYPING -->
-                        <div id="remove-typing" class="message">
-                            <a href="#" class="avatar avatar-responsive">
-                                <img class="avatar-img" src="../static/assets/img/avatars/2.jpg" alt="">
-                            </a>
-
-                            <div class="message-inner">
-                                <div class="message-body">
-                                    <div class="message-content">
-                                        <div class="message-text">
-                                            <p>CompBot is typing<span class="typing-dots"><span>.</span><span>.</span><span>.</span></span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    `)
-                    message.val("");
-
-                    setTimeout( function(){ 
-                        $("#remove-typing" ).remove();
-                        $("#chatbox").append(` 
-                            <!-- THIS IS THE BOT REPLY -->
-                            <div class="message">
-                                <a href="#" class="avatar avatar-responsive">
-                                    <img class="avatar-img" src="../static/assets/img/avatars/2.jpg" alt="">
-                                </a>
-
-                                <div class="message-inner">
-                                    <div class="message-body">
-                                        <div class="message-content">
-                                            <div class="message-text">
-                                                <p>Hey, Michel! YOUR ANSWER IS GIMME 50 GRAND !!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="message-footer">
-                                        <span class="extra-small text-muted">`+ new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) +`</span>
-                                    </div>
-                                </div>
-                            </div>
-                        `);
-                    }  , 3000 );
-                }
-            });
-
             $('#id-member-1').on("click", ()=>{
                 $('#id-member-2').prop('checked', false);
             });
@@ -845,7 +948,19 @@
                     window.location.href="../chat/admin";
                 }
             });
-
         </script>
+        <script type="text/javascript">
+            $('#second').on("click", ()=>{
+                $('#message-to-send').prop("disabled", true);
+            });
+        </script>
+        <script src="../static/js/send_messages.js"></script>
+        <script src="../static/js/general.js"></script>
+        <script src="../static/js/chemistry.js"></script>
+        <script src="../static/js/computing.js"></script>
+        <script src="../static/js/geography_geology.js"></script>
+        <script src="../static/js/life_sciences.js"></script>
+        <script src="../static/js/mathematics.js"></script>
+        <script src="../static/js/physics.js"></script>
     </body>
 </html>
