@@ -1,0 +1,64 @@
+{
+    "intents": [
+    {"tag": "COMP1126",
+    "patterns": ["what is COMP1126 about?","Introduction to Computing I","what is Introduction to Computing I about?","How many credits does Introduction to Computing I","How many credits does COMP1126 have?"],
+    "responses": [" LEVEL: I <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: A CAPE (Units 1 and 2 {or A-level}) Science subject, ECON1003, Teacher’s College Diploma or Associate Degree in Mathematics or Science, or Information Technology <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp1126"]
+    },
+    {"tag": "COMP1127",
+    "patterns": ["what is COMP1127 about?","Introduction to Computing II","what is Introduction to Computing II about?","How many credits does Introduction to Computing II have?","How many credits does COMP1127 have?"],
+    "responses": [" LEVEL: I <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: A CAPE (Units 1 and 2 {or A-level}) Science subject, ECON1003, Teacher’s College Diploma or Associate Degree in Mathematics or Science, or Information Technology <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp1127"]
+    },
+	{"tag": "COMP1161",
+    "patterns": ["what is COMP1161 about?","Object-oriented Programming","what is Object-oriented Programming about?","How many credits does Object-oriented Programming have?","How many credits does COMP1161 have?"],
+    "responses": [" LEVEL: I <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP1126, COMP1127 <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp1161"]
+    },
+	{"tag": "COMP1220",
+    "patterns": ["what is COMP1220 about?","Computing and Society","what is Computing and Society about?","How many credits does Computing and Society have?","How many credits does COMP1220 have?"],
+    "responses": [" LEVEL: I <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: NONE <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp1220"]
+    },
+	{"tag": "COMP1210",
+    "patterns": ["what is COMP1210 about?","Mathematics for Computing","what is Mathematics for Computing about?","How many credits does Mathematics for Computing have?","How many credits does COMP1210 have?"],
+    "responses": [" LEVEL: I <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: CSEC Mathematics <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp1210"]
+    },
+	{"tag": "COMP2201",
+    "patterns": [ "Discrete Mathematics for Computer Science","what is Discrete Mathematics for Computer Science about?","How many credits does Discrete Mathematics for Computer Sciencehave?","How many credits does COMP1210 have?"],
+    "responses": [" LEVEL: II <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP1210 - Mathematics for Computing OR MATH1152 - Introductions to formal Mathematics <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp2201"]
+    },
+	{"tag": "COMP2211",
+    "patterns": ["what is COMP2211 about?","Analysis of Algorithms","what is Analysis of Algorithms about?","How many credits does Analysis of Algorithms have?","How many credits does COMP2211 have?"],
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP1126, COMP1127, COMP1161 AND COMP1210 <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp2211"]
+    },
+	{"tag": "COMP2140",
+    "patterns": ["what is COMP2140 about?","Software Engineering","what is Software Engineering about?","How many credits does Software Engineering have?","How many credits does COMP2140 have?"],
+    "responses": [" LEVEL: II <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP1126 - Introduction to Computing I, COMP1127 - Introduction to Computing I AND COMP1161- Object-Oriented Programming. <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp2140"]
+    },
+	{"tag": "COMP2171",
+    "patterns": ["what is COMP2171 about?","Object Oriented Design and Implementation","what is Object Oriented Design and Implementation about?","How many credits does Object Oriented Design and Implementation have?","How many credits does COMP2171 have?"],
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP1161 - Object-Oriented Programming AND COMP2140 - Software Engineering <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp2171"]
+    },
+	{"tag": "COMP2190",
+    "patterns": ["what is COMP2190 about?","Net-Centric Computing","what is Net-Centric Computing about?","How many credits does Net-Centric Computing have?","How many credits does COMP2190 have?"],
+    "responses": [" LEVEL: II <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP1126 - Introduction to Computing I, COMP1127 - Introduction to Computing I, COMP1161 - Object-Oriented Programming AND COMP1210 - Mathematics for Computing or MATH1152 - Introduction to Formal Mathematics). May not be credited with COMP3150 - Computing Networking and Communications <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp2190"]
+    },
+	{"tag": "COMP2340",
+    "patterns": ["what is COMP2340 about?","Computer Systems Organisation","what is Computer Systems Organisation about?","How many credits does Computer Systems Organisation have?","How many credits does COMP2340 have?"],
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP1126 - Introduction to Computing I, COMP1127 - Introduction to Computing I, COMP1161- Object-Oriented Programming AND COMP1210 - Mathematics for Computing <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp2340"]
+    },
+	{"tag": "COMP3101",
+    "patterns": ["what is COMP3101 about?","Operating Systems","what is Operating Systems about?","How many credits does Operating Systems have?","How many credits does COMP101 have?"],
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP2340 - Computer Systems Organization <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp3101"]
+    },
+	{"tag": "COMP3220",
+    "patterns": ["what is COMP3220 about?","Principles of Artificial Intelligence","what is Principles of Artificial Intelligence about?","How many credits does Principles of Artificial Intelligence have?","How many credits does COMP3220 have?"],
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP2201 - Discrete Mathematics for Computer Science AND COMP2211- Analysis of Algorithms <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp3220"]
+    },
+	{"tag": "COMP3161",
+    "patterns": ["what is COMP3161 about?","Database Management Systems","what is Database Management Systems about?","How many credits does Database Management Systems have?","How many credits does COMP3161 have?"],
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP1126 - Introduction to Computing I, COMP1127 - Introduction to Computing I, COMP1210 - Mathematics for Computing AND COMP1161- Object-Oriented Programming. <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp3161"]
+    },
+	{"tag": "COMP3901",
+    "patterns": ["what is COMP3901 about?","Capstone Project","what is Capstone Project about?","How many credits does Capstone Project have?","How many credits does COMP3901 have?"],
+    "responses": [" LEVEL: III <br> SEMESTER: II and Summer <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: COMP2140 - Software Engineering, COMP2211 - Analysis of Algorithms, AND Any 6 credits of Level 2 or 3 computing code courses. <br> To see more about the course visit https://www.mona.uwi.edu/compsci/comp3901"]
+    }
+    ]
+}

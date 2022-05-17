@@ -8,9 +8,11 @@ import numpy as np
 from keras.models import load_model
 import json
 import random
-words = pickle.load(open('words.pkl','rb'))
-classes = pickle.load(open('classes.pkl','rb'))
+# model = load_model('general.h5')
+# intents = json.loads(open('app/general/general.json', encoding='utf-8').read())
 
+# words = pickle.load(open('words.pkl','rb'))
+# classes = pickle.load(open('classes.pkl','rb'))
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -37,8 +39,20 @@ def predict_class(sentence, model):
     # filter out predictions below a threshold
     if(model=="general"):
         model = load_model('general.h5')
+        words = pickle.load(open('words1.pkl','rb'))
+        classes = pickle.load(open('classes1.pkl','rb'))
     if(model=="computing_about"):
         model = load_model('computing_about.h5')
+        words = pickle.load(open('words.pkl','rb'))
+        classes = pickle.load(open('classes.pkl','rb'))
+    if(model=="computing_staff"):
+        model = load_model('computing_staff.h5')
+        words = pickle.load(open('words2.pkl','rb'))
+        classes = pickle.load(open('classes2.pkl','rb'))
+    if(model=="computing_courses"):
+        model = load_model('computing_courses.h5')
+        words = pickle.load(open('words3.pkl','rb'))
+        classes = pickle.load(open('classes3.pkl','rb'))
     p = bow(sentence, words, show_details=False)
     res = model.predict(np.array([p]))[0]
     ERROR_THRESHOLD = 0.25
@@ -51,6 +65,10 @@ def predict_class(sentence, model):
     return return_list
 
 def getResponse(ints,model):
+    if(model=="computing_courses"):
+        intents = json.loads(open('app/courses/computing_courses.json', encoding='utf-8').read())
+    if(model=="computing_staff"):
+        intents = json.loads(open('app/lecturers/computing_staff.json', encoding='utf-8').read())
     if(model=="general"):
         intents = json.loads(open('app/general/general.json', encoding='utf-8').read())
     if(model=="computing_about"):

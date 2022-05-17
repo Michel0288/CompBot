@@ -96,7 +96,7 @@ $('#first').on("click", ()=>{
                                     <div class="message-body">
                                         <div class="message-content">
                                             <div class="message-text">
-                                                <p>Do you have another question?<span class="typing-dots"><span>.</span><span>.</span><span>.</span></span></p>
+                                                <p>Type another question<span class="typing-dots"><span>.</span><span>.</span><span>.</span></span></p>
                                             </div>
                                         </div>
                                     </div>
