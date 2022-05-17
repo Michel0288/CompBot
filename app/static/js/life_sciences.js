@@ -13,3 +13,8 @@ $('#life_sciences_lecturers_options').on("click", ()=>{
     $('#message-to-send').prop("disabled", false);
     alert("life sciences lecturers");
 });
+
+$('#life_sciences_about_options').on("click", ()=>{               
+    $('#message-to-send').prop("disabled", false);
+    alert("life sciences about");
+});

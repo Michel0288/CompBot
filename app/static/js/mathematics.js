@@ -13,3 +13,8 @@ $('#mathematics_lecturers_options').on("click", ()=>{
     $('#message-to-send').prop("disabled", false);
     alert("mathematics lecturers");
 }); 
+
+$('#mathematics_about_options').on("click", ()=>{            
+    $('#message-to-send').prop("disabled", false);
+    alert("mathematics about");
+}); 

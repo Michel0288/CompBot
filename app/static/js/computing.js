@@ -13,3 +13,8 @@ $('#computing_lecturers_options').on("click", ()=>{
     $('#message-to-send').prop("disabled", false);
     alert("computing lecturers");
 });
+
+$('#computing_about_options').on("click", ()=>{
+    $('#message-to-send').prop("disabled", false);
+    alert("computing about");
+});

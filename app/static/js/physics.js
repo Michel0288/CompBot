@@ -13,3 +13,8 @@ $('#physics_lecturers_options').on("click", ()=>{
     $('#message-to-send').prop("disabled", false);
     alert("physics lecturers");
 });
+
+$('#physics_about_options').on("click", ()=>{  
+    $('#message-to-send').prop("disabled", false);
+    alert("physics about");
+});
