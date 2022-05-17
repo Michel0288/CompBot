@@ -2,15 +2,15 @@
     "intents": [
     {"tag": "mission",
     "patterns": ["what is chemistry department mission","mission statement"],
-    "responses": ["The Department of Chemistry, UWI Mona, having achieved regional and global distinction in the provision of first class teaching, research and service remains committed to educate and train students to the highest standards to become chemists who are competent at all levels of professional development.\\nThe Department will provide an environment that creates and maintains enthusiasm for Chemistry and high quality instruction and will endeavour to harness the talent, abilities and potential of all entrants into our programmes and will seek to empower them to think critically, intelligently and independently.\\nThrough exceptional service to our primary and secondary clients the Department aims to contribute to the development of the wider community, the nation and the world at large."]
+    "responses": ["The Department of Chemistry, UWI Mona, having achieved regional and global distinction in the provision of first class teaching, research and service remains committed to educate and train students to the highest standards to become chemists who are competent at all levels of professional development.<br>The Department will provide an environment that creates and maintains enthusiasm for Chemistry and high quality instruction and will endeavour to harness the talent, abilities and potential of all entrants into our programmes and will seek to empower them to think critically, intelligently and independently.<br>Through exceptional service to our primary and secondary clients the Department aims to contribute to the development of the wider community, the nation and the world at large."]
     },
     {"tag": "history",
     "patterns": ["What is the chemistry department history?", "history"],
-    "responses": ["The entrance to the Department of Chemistry as pictured on the cover of the book by Magnus, K. E. and Lancashire, R. J. (2010). The Department of Chemistry, UWI, Mona With emphasis on the early years. Ian Randle , Jamaica (Cover). It is available from the UWI Mona Bookshop, and Amazon.com.\\n See more at https://www.mona.uwi.edu/chemistry/history"]
+    "responses": ["The entrance to the Department of Chemistry as pictured on the cover of the book by Magnus, K. E. and Lancashire, R. J. (2010). The Department of Chemistry, UWI, Mona With emphasis on the early years. Ian Randle , Jamaica (Cover). It is available from the UWI Mona Bookshop, and Amazon.com.<br> See more at <a href='https://www.mona.uwi.edu/chemistry/history'> https://www.mona.uwi.edu/chemistry/history</a>"]
     },
     {"tag": "facilities",
     "patterns": ["Facilities", "chemistry facilities", "chemistry department facilities"],
-    "responses": ["The department has control of five lecture theatres and three classrooms, listed below.  All lecture theatres are air-conditioned and most are equipped with video projectors and screens. The department also utilizes two additional lecture theatres which are shared among the departments of the Faculty of Science and Technology (FST).\\n See more at https://www.mona.uwi.edu/chemistry/facilities"]
+    "responses": ["The department has control of five lecture theatres and three classrooms, listed below.  All lecture theatres are air-conditioned and most are equipped with video projectors and screens. The department also utilizes two additional lecture theatres which are shared among the departments of the Faculty of Science and Technology (FST).<br> See more at https://www.mona.uwi.edu/chemistry/facilities"]
     },
     {"tag": "services",
         "patterns": ["services", "chemistry department services"],

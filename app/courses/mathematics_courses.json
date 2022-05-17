@@ -2,179 +2,179 @@
     "intents": [
     {"tag": "MATH1141",
     "patterns": ["what is MATH1141 about?","Introduction to Linear Algebra & Analytic Geometry","what is Introduction to Linear Algebra & Analytic Geometry about?","How many credits does Introduction to Linear Algebra & Analytic Geometry have?","How many credits does MATH1141 have?"],
-    "responses": [" LEVEL: I \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: CAPE Pure Mathematics or GCE A-Level Mathematics, or M08B/MATH0100 and M08C/MATH0110, or equivalent \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/introduction-linear-algebra-analytic-geometry."]
+    "responses": [" LEVEL: I <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: CAPE Pure Mathematics or GCE A-Level Mathematics, or M08B/MATH0100 and M08C/MATH0110, or equivalent <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/introduction-linear-algebra-analytic-geometry."]
     },
     {"tag": "MATH1142",
     "patterns": ["what is MATH1142 about?","Calculus I","what is Calculus I about?","How many credits does Calculus I have?","How many credits does MATH1142 have?"],
-    "responses": [" LEVEL: I \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: Two Units (1 & 2) Of CAPE Pure Mathematics or Math 0100 and Math 0200, or Equivalent \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math1141_0.pdf."]
+    "responses": [" LEVEL: I <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: Two Units (1 & 2) Of CAPE Pure Mathematics or Math 0100 and Math 0200, or Equivalent <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math1141_0.pdf."]
     },
     {"tag": "MATH1152",
     "patterns": ["what is MATH1152 about?","Introduction to Formal Mathematics","what is Introduction to Formal Mathematics about?","How many credits does Introduction to Formal Mathematics have?"],
-    "responses": ["LEVEL I \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: Two Units (1 & 2) Of CAPE Pure Mathematics or MATH0100 - Pre-calculus AND MATH0110 - Calculus and Analytical Geometry OR equivalent. \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math1152_1.pdf"]
+    "responses": ["LEVEL I <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: Two Units (1 & 2) Of CAPE Pure Mathematics or MATH0100 - Pre-calculus AND MATH0110 - Calculus and Analytical Geometry OR equivalent. <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math1152_1.pdf"]
     },
     {"tag": "MATH1151",
     "patterns": ["what is MATH1151 about?","Calculus II","what is Calculus II about?","How many credits does Calculus II have?","How many credits does MATH1151 have?"],
-    "responses": [" LEVEL: I \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES:  Calculus I (MATH 1142) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math1151_0.pdf."]
+    "responses": [" LEVEL: I <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES:  Calculus I (MATH 1142) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math1151_0.pdf."]
     },
     {"tag": "MATH1185",
     "patterns": ["what is MATH1185 about?","Calculus for Scientists and Engineers","what is Calculus for Scientists and Engineers about?","How many credits does Calculus for Scientists and Engineers have?","How many credits does MATH1185 have?"],
-    "responses": [" LEVEL: I \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES:  CAPE or GCE A-Level Mathematics, or M08B/MATH0100 and M08C/MATH0110, or equivalent. \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math1185_0.pdf."]
+    "responses": [" LEVEL: I <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES:  CAPE or GCE A-Level Mathematics, or M08B/MATH0100 and M08C/MATH0110, or equivalent. <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math1185_0.pdf."]
     },
     {"tag": "STAT1001",
     "patterns": ["what is STAT1001 about?","Statistics for the Sciences","what is Statistics for the Sciences about?","How many credits does Statistics for the Sciences have?","How many credits does STAT1001 have?"],
-    "responses": [" LEVEL: I \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES:  CAPE Mathematics, or its equivalent. \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat1001_0.pdf."]
+    "responses": [" LEVEL: I <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES:  CAPE Mathematics, or its equivalent. <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat1001_0.pdf."]
     },
     {"tag": "MATH2401",
     "patterns": ["what is MATH2401 about?","ELEMENTS OF MATHEMATICAL ANALYSIS","what is ELEMENTS OF MATHEMATICAL ANALYSIS about?","How many credits does ELEMENTS OF MATHEMATICAL ANALYSIS have?","How many credits does MATH2401 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH1141, MATH1142, MATH1151 and MATH1152) or (M10A, M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2401.pdf."]
+    "responses": [" LEVEL: II <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH1141, MATH1142, MATH1151 and MATH1152) or (M10A, M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2401.pdf."]
     },
     {"tag": "MATH2403",
     "patterns": ["what is MATH2403 about?","MULTIVARIABLE CALCULUS","what is MULTIVARIABLE CALCULUS about?","How many credits does MULTIVARIABLE CALCULUS have?","How many credits does MATH2403 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH1141, MATH1142, MATH1151 and MATH1152 or MATH1185) or (M10A, M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2403.pdf."]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH1141, MATH1142, MATH1151 and MATH1152 or MATH1185) or (M10A, M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2403.pdf."]
     },
     {"tag": "MATH2404",
     "patterns": ["what is MATH2404 about?","INTRODUCTION TO PROBABILITY THEORY","what is INTRODUCTION TO PROBABILITY THEORY about?","How many credits does INTRODUCTION TO PROBABILITY THEORY have?","How many credits does MATH2404 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH1141, MATH1142, MATH1151 & MATH1152) or (M10A & M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2404.pdf."]
+    "responses": [" LEVEL: II <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH1141, MATH1142, MATH1151 & MATH1152) or (M10A & M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2404.pdf."]
     },
 	{"tag": "MATH2407",
     "patterns": ["what is MATH2407 about?","STOCHASTIC MODELING","what is STOCHASTIC MODELING about?","How many credits does STOCHASTIC MODELING have?","How many credits does MATH2407 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2404 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2407.pdf."]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2404 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2407.pdf."]
     },
     {"tag": "MATH2410",
     "patterns": ["what is MATH2410 about?","A FIRST COURSE IN LINEAR ALGEBRA","what is A FIRST COURSE IN LINEAR ALGEBRA about?","How many credits does A FIRST COURSE IN LINEAR ALGEBRA have?","How many credits does MATH2410 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH 1141 & MATH 1152) or (M10A & M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2410.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH 1141 & MATH 1152) or (M10A & M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2410.pdf"]
     },
     {"tag": "MATH2411",
     "patterns": ["what is MATH2411 about?","INTRODUCTION TO ABSTRACT ALGEBRA","what is INTRODUCTION TO ABSTRACT ALGEBRA about?","How many credits does INTRODUCTION TO ABSTRACT ALGEBRA have?","How many credits does MATH2411 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH 1141 & MATH 1152) or (M10A & M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2411.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH 1141 & MATH 1152) or (M10A & M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2411.pdf"]
     },
     {"tag": "MATH2420",
     "patterns": ["what is MATH2420 about?","Ordinary Differential Equations","what is Ordinary Differential Equations about?","How many credits does Ordinary Differential Equations have?","How many credits does MATH2420 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH 1141, MATH1142, MATH1151 & MATH 1152) or (M10A & M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2420.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH 1141, MATH1142, MATH1151 & MATH 1152) or (M10A & M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2420.pdf"]
     },
     {"tag": "MATH2421",
     "patterns": ["what is MATH2421 about?","FOURIER SERIES AND INTEGRAL TRANSFORMS","what is FOURIER SERIES AND INTEGRALTRANSFORMS about?","How many credits does FOURIER SERIES AND INTEGRAL TRANSFORMS have?","How many credits does MATH2421 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH 1141, MATH1142, MATH1151 & MATH 1152) or (MATH1185) or (M10A & M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2421.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH 1141, MATH1142, MATH1151 & MATH 1152) or (MATH1185) or (M10A & M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2421.pdf"]
     },
 	{"tag": "MATH2430",
     "patterns": ["what is MATH2430 about?","LINEAR OPTIMIZATION","what is LINEAR OPTIMIZATION about?","How many credits does LINEAR OPTIMIZATION have?","How many credits does MATH2430 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH 1141 & MATH 1152) or (MATH1185) or (M10A & M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2430.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH 1141 & MATH 1152) or (MATH1185) or (M10A & M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2430.pdf"]
     },
 	{"tag": "MATH2701",
     "patterns": ["what is MATH2701 about?","FINANCIAL MATHEMATICS I","what is FINANCIAL MATHEMATICS I about?","How many credits does FINANCIAL MATHEMATICS I have?","How many credits does MATH2701 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: (MATH 1141, MATH1142, MATH1151 & MATH 1152) or (M10A & M10B) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2701.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: (MATH 1141, MATH1142, MATH1151 & MATH 1152) or (M10A & M10B) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2701.pdf"]
     },
 	{"tag": "MATH2702",
     "patterns": ["what is MATH2702 about?","Actuarial Mathematics I","what is Actuarial Mathematics I about?","How many credits does Actuarial Mathematics I have?","How many credits does MATH2702 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2701 and MATH2404 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2702.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2701 and MATH2404 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math2702.pdf"]
     },
 	{"tag": "STAT2001",
     "patterns": ["what is STAT2001 about?","INFERENTIAL STATISTICS","what is INFERENTIAL STATISTICS about?","How many credits does INFERENTIAL STATISTICS have?","How many credits does STAT2001 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: STAT1001 or MATH2104 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat2001.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: STAT1001 or MATH2104 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat2001.pdf"]
     },
 	{"tag": "STAT2002",
     "patterns": ["what is STAT2002 about?","DISCRETE STATISTICS","what is DISCRETE STATISTICS about?","How many credits does DISCRETE STATISTICS have?","How many credits does STAT2002 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: STAT1001: Statistics for the Sciences, MATH1142: Calculus I \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat2002.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: STAT1001: Statistics for the Sciences, MATH1142: Calculus I <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat2002.pdf"]
     },
 	{"tag": "STAT2003",
     "patterns": ["what is STAT2003 about?","LINEAR MODELS","what is LINEAR MODELS about?","How many credits does LINEAR MODELS have?","How many credits does STAT2003 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: STAT1001: Statistics for the Science, STAT2001: Inferential Statistics \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat2003.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: STAT1001: Statistics for the Science, STAT2001: Inferential Statistics <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat2003.pdf"]
     },
 	{"tag": "STAT2004",
     "patterns": ["what is STAT2004 about?","MULTIVARIATE METHODS","what is MULTIVARIATE METHODS about?","How many credits does MULTIVARIATE METHODS have?","How many credits does STAT2004 have?"],
-    "responses": [" LEVEL: II \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: STAT1001: Statistics for the Sciences, MATH1141: Introductory Linear Algebra and Analytic Geometry, MATH2410: A First Course in Linear Algebra \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat2004_0.pdf"]
+    "responses": [" LEVEL: II <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: STAT1001: Statistics for the Sciences, MATH1141: Introductory Linear Algebra and Analytic Geometry, MATH2410: A First Course in Linear Algebra <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat2004_0.pdf"]
     },
 	{"tag": "MATH3155",
     "patterns": ["what is MATH3155 about?","Complex Variables","what is Complex Variables about?","How many credits does Complex Variables have?","How many credits does MATH3155 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2401 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3155.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2401 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3155.pdf"]
     },
 	{"tag": "MATH3401",
     "patterns": ["what is MATH3401 about?","Introduction to the Theory of Integration","what is Introduction to the Theory of Integration about?","How many credits does Introduction to the Theory of Integration have?","How many credits does MATH3401 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2401 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3401.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2401 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3401.pdf"]
     },
 	{"tag": "MATH3402",
     "patterns": ["what is MATH3402 about?","Basics of Metric and Topological Spaces ","what is Basics of Metric and Topological Spaces about?","How many credits does Basics of Metric and Topological Spaces have?","How many credits does MATH3402 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2401 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3402.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2401 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3402.pdf"]
     },
 	{"tag": "MATH3403",
     "patterns": ["what is MATH3403 about?","Some Topics in Functional Analysis","what is Some Topics in Functional Analysis about?","How many credits does Some Topics in Functional Analysis have?","How many credits does MATH3403 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2401 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3403.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2401 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3403.pdf"]
     },
 	{"tag": "MATH3404",
     "patterns": ["what is MATH3404 about?","Introduction to Differential Geometry with Computer Software ","what is Introduction to Differential Geometry with Computer Software about?","How many credits does Introduction to Differential Geometry with Computer Software have?","How many credits does MATH3404 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2401, MATH2403 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3404.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2401, MATH2403 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3404.pdf"]
     },
 	{"tag": "MATH3405",
     "patterns": ["what is MATH3405 about?","NUMBER THEORY ","what is NUMBER THEORY about?","How many credits does NUMBER THEORY have?","How many credits does MATH3405 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2401: Elements of Mathematical Analysis, MATH2411: Introduction to Abstract Algebra \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3405.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2401: Elements of Mathematical Analysis, MATH2411: Introduction to Abstract Algebra <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3405.pdf"]
     },
 	{"tag": "MATH3411",
     "patterns": ["what is MATH3411 about?","Advanced Abstract Algebra ","what is Advanced Abstract Algebra about?","How many credits does Advanced Abstract Algebra have?","How many credits does MATH3411 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2411 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3411.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2411 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3411.pdf"]
     },
 	{"tag": "MATH3412",
     "patterns": ["what is MATH3412 about?","Advanced Linear Algebra","what is Advanced Linear Algebra about?","How many credits does Advanced Linear Algebra have?","How many credits does MATH3412 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2410 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3412.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2410 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3412.pdf"]
     },
 	{"tag": "MATH3414",
     "patterns": ["what is MATH3414 about?","Selected Topics in Operations Research ","what is Selected Topics in Operations Research about?","How many credits does Selected Topics in Operations Research have?","How many credits does MATH3414 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2140 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3414.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2140 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3414.pdf"]
     },
 	{"tag": "MATH3421",
     "patterns": ["what is MATH3421 about?","Partial Differential Equations","what is Partial Differential Equations about?","How many credits does Partial Differential Equations have?","How many credits does MATH3421 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2411 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3421.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2411 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3421.pdf"]
     },
 	{"tag": "MATH3422",
     "patterns": ["what is MATH3422 about?","Mathematical Modelling","what is Mathematical Modelling about?","How many credits does Mathematical Modelling have?","How many credits does MATH3421 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2401, MATH2410, MATH2420 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3422.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2401, MATH2410, MATH2420 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3422.pdf"]
     },
 	{"tag": "MATH3423",
     "patterns": ["what is MATH3423 about?","RESEARCH PROJECT IN MATHEMATICS","what is RESEARCH PROJECT IN MATHEMATICS about?","How many credits does RESEARCH PROJECT IN MATHEMATICS have?","How many credits does MATH3423 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2420, MATH2401 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3423.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2420, MATH2401 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3423.pdf"]
     },
 	{"tag": "MATH3424",
     "patterns": ["what is MATH3424 about?","Numerical Methods","what is Numerical Methods about?","How many credits does Numerical Methods have?","How many credits does MATH3424 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2401 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3424.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2401 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3424.pdf"]
     },
 	{"tag": "MATH3425",
     "patterns": ["what is MATH3425 about?","TECHNIQUES FOR SOLVING ADVANCED MATHEMATICS PROBLEMS","what is TECHNIQUES FOR SOLVING ADVANCED MATHEMATICS PROBLEMS about?","How many credits does TECHNIQUES FOR SOLVING ADVANCED MATHEMATICS PROBLEMS have?","How many credits does MATH3425 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH2410, MATH2401 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3425.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH2410, MATH2401 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3425.pdf"]
     },
 	{"tag": "MATH3801",
     "patterns": ["what is MATH3801 about?","Financial Mathematics II","what is Financial Mathematics II about?","How many credits does Financial Mathematics II have?","How many credits does MATH3801 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: Financial Mathematics I (MATH2701), Financial Management I (MGMT2023), Financial Management II (MGMT3048), Introduction to Probability Theory (MATH2404) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3801.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: Financial Mathematics I (MATH2701), Financial Management I (MGMT2023), Financial Management II (MGMT3048), Introduction to Probability Theory (MATH2404) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3801.pdf"]
     },
 	{"tag": "MATH3802",
     "patterns": ["what is MATH3802 about?","EVALUTION ACTUARIAL MODELS","what is EVALUTION ACTUARIAL MODELS about?","How many credits does EVALUTION ACTUARIAL MODELS have?","How many credits does MATH3802 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: Introduction to Actuarial Mathematics (MATH2220), Probability Theory (MATH2140), Statistical Inference (MATH2150) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3802.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: Introduction to Actuarial Mathematics (MATH2220), Probability Theory (MATH2140), Statistical Inference (MATH2150) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3802.pdf"]
     },
 	{"tag": "MATH3803",
     "patterns": ["what is MATH3803 about?","Models for Financial Economics","what is Models for Financial Economics about?","How many credits does Models for Financial Economics have?","How many credits does MATH3803 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: MATH3801 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3803.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: MATH3801 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3803.pdf"]
     },
 	{"tag": "MATH3804",
     "patterns": ["what is MATH3804 about?","ACTUARIAL MATHEMATICS II","what is ACTUARIAL MATHEMATICS II about?","How many credits does ACTUARIAL MATHEMATICS II have?","How many credits does MATH3804 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: Mathematics of Finance (MATH2210), Introduction to Actuarial Mathematics (MATH2220) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3804.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: Mathematics of Finance (MATH2210), Introduction to Actuarial Mathematics (MATH2220) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3804.pdf"]
     },
 	{"tag": "MATH3805",
     "patterns": ["what is MATH3805 about?","MATHEMATICS OF PENSION FUNDS","what is MATHEMATICS OF PENSION FUNDS about?","How many credits does MATHEMATICS OF PENSION FUNDS have?","How many credits does MATH3805 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: Mathematics of Finance (MATH2210), Introduction to Actuarial Mathematics (MATH2220), Actuarial Mathematics II (MATH3704) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3805.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: Mathematics of Finance (MATH2210), Introduction to Actuarial Mathematics (MATH2220), Actuarial Mathematics II (MATH3704) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3805.pdf"]
     },
 	{"tag": "MATH3806",
     "patterns": ["what is MATH3806 about?","TOPICS IN GENERAL INSURANCE","what is TOPICS IN GENERAL INSURANCE about?","How many credits does TOPICS IN GENERAL INSURANCE have?","How many credits does MATH3806 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: Financial Mathematics I MATH 2210 (M27A), Introduction to Probability Theory (MATH2404) \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3806.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: Financial Mathematics I MATH 2210 (M27A), Introduction to Probability Theory (MATH2404) <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/math3806.pdf"]
     },
 	{"tag": "STAT3001",
     "patterns": ["what is STAT3001 about?","REGRESSION ANALYSIS","what is REGRESSION ANALYSIS about?","How many credits does REGRESSION ANALYSIS have?","How many credits does STAT3001 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: I \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: STAT2001 and MATH2410 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat3001.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: I <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: STAT2001 and MATH2410 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat3001.pdf"]
     },
 	{"tag": "STAT3002",
     "patterns": ["what is STAT3002 about?","TIME SERIES","what is TIME SERIES about?","How many credits does TIME SERIES have?","How many credits does STAT3002 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: STAT2001 and MATH2404 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat3002.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: STAT2001 and MATH2404 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat3002.pdf"]
     },
 	{"tag": "STAT3003",
     "patterns": ["what is STAT3003 about?","DESIGN & ANALYSIS OF EXPERIMENTS","what is DESIGN & ANALYSIS OF EXPERIMENTS about?","How many credits does DESIGN & ANALYSIS OF EXPERIMENTS have?","How many credits does STAT3003 have?"],
-    "responses": [" LEVEL: III \\n SEMESTER: II \\n NUMBER OF CREDITS: 3 \\n PREREQUISITES: STAT2001 \\n To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat3003.pdf"]
+    "responses": [" LEVEL: III <br> SEMESTER: II <br> NUMBER OF CREDITS: 3 <br> PREREQUISITES: STAT2001 <br> To see more about the course visit https://www.mona.uwi.edu/mathematics/sites/default/files/mathematics/stat3003.pdf"]
     }
     ]
 }

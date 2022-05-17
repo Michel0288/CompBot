@@ -1,3 +1,4 @@
+from flask import request
 import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -5,10 +6,8 @@ import pickle
 import numpy as np
 
 from keras.models import load_model
-model = load_model('chatbot_model.h5')
 import json
 import random
-intents = json.loads(open('app/data.json', encoding='utf-8').read())
 words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
 
@@ -36,6 +35,10 @@ def bow(sentence, words, show_details=True):
 
 def predict_class(sentence, model):
     # filter out predictions below a threshold
+    if(model=="general"):
+        model = load_model('general.h5')
+    if(model=="computing_about"):
+        model = load_model('computing_about.h5')
     p = bow(sentence, words, show_details=False)
     res = model.predict(np.array([p]))[0]
     ERROR_THRESHOLD = 0.25
@@ -47,9 +50,13 @@ def predict_class(sentence, model):
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
 
-def getResponse(ints, intents_json):
+def getResponse(ints,model):
+    if(model=="general"):
+        intents = json.loads(open('app/general/general.json', encoding='utf-8').read())
+    if(model=="computing_about"):
+        intents = json.loads(open('app/about/computing_about.json', encoding='utf-8').read())
     tag = ints[0]['intent']
-    list_of_intents = intents_json['intents']
+    list_of_intents = intents['intents']
     for i in list_of_intents:
         if(i['tag']== tag):
             result = random.choice(i['responses'])
@@ -59,12 +66,10 @@ def getResponse(ints, intents_json):
     return result
 
 def chatbot_response():
-    print("Chat with CompBot (type quit to stop)!")
     while True:
-        msg = input("You: ")
-        if msg.lower() == "quit":
-            break
-        ints = predict_class(msg, model)
-        res = getResponse(ints, intents)
-        print(res)
-chatbot_response()
+        if request.method == 'POST':
+            msg = request.form['userinput']
+            modeltype=request.form['modeltype']
+            ints = predict_class(msg, modeltype)
+            res = getResponse(ints,modeltype)
+            return res

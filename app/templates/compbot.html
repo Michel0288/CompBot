@@ -795,7 +795,7 @@
                             <!-- Chat: Files -->
 
                             <!-- Chat: Form -->
-                            <form class="chat-form rounded-pill bg-dark" data-emoji-form="">
+                            <form method="POST" class="chat-form rounded-pill bg-dark" data-emoji-form="">
                                 <div class="row align-items-center gx-0">
                                     <div class="col-auto">
                                         <a href="#" class="btn btn-icon btn-link text-body rounded-circle d-none" id="dz-btn">
@@ -805,7 +805,7 @@
 
                                     <div class="col">
                                         <div class="input-group">
-                                            <textarea disabled id="message-to-send" style="color: #000" class="form-control px-4" placeholder="Type your message..." rows="1" data-emoji-input="" data-autosize="true"></textarea>
+                                            <textarea name="userinput" disabled id="message-to-send" style="color: #000" class="form-control px-4" placeholder="Type your message..." rows="1" data-emoji-input="" data-autosize="true"></textarea>
 
                                             <a href="#" class="input-group-text text-body pe-0 d-none" data-emoji-btn="">
                                                 <span class="icon icon-lg">
@@ -990,7 +990,7 @@
                 $('#message-to-send').prop("disabled", true);
             });
         </script>
-        <script src="../static/js/send_messages.js"></script>
+        <!-- <script src="../static/js/send_messages.js"></script> -->
         <script src="../static/js/general.js"></script>
         <script src="../static/js/chemistry.js"></script>
         <script src="../static/js/computing.js"></script>

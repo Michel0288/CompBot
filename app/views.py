@@ -7,8 +7,8 @@ This file creates your application.
 
 
 import MySQLdb
-from app import app
-from flask import render_template, request, redirect, url_for, flash, session
+from app import app, chat
+from flask import jsonify, render_template, request, redirect, url_for, flash, session
 from app.forms import RegisterForm
 # from app.forms import LoginForm
 
@@ -66,9 +66,13 @@ def login():
 
     return redirect(url_for('home'))
 
-@app.route('/chat/compbot')
+@app.route('/chat/compbot', methods=["GET","POST"])
 def chat_compbot():
     """Render the website's chat page for compbot"""
+    if request.method == 'POST':
+        userinput = request.form['userinput']
+        response = chat.chatbot_response()
+        return jsonify({"response": response })
     return render_template('compbot.html')
 
 @app.route('/chat/admin')
