@@ -280,7 +280,6 @@
                             </div>
                             <p class="mb-4 fs-4">In et tempus dui, in porta dolor. Donec molestie a purus ut interdum. Donec quis felis dignissim, luctus libero ornare.</p>
                             <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#courseModal">View Michel's Details <i class="fe fe-plus"></i></a>
-
                         </div>
                     </div>
                 </div>
@@ -651,7 +650,7 @@
                             <span>Don’t have an account? <a href="#" data-bs-toggle="modal" class="ms-1">Sign up</a></span>
                           </div>
                           <!-- Form -->
-                          <form>
+                          <form method="post" action="action={{ url_for('login') }}">
                                 <!-- Username -->
                             <div class="mb-3">
                               <label for="email-login" class="form-label">Email</label>
@@ -665,8 +664,8 @@
                                 required>
                             </div>
                             <div>
-                                  <!-- Button -->
-                                <div class="d-grid">
+                                <!-- Button -->
+                            <div class="d-grid">
                               <button type="submit" class="btn btn-primary ">Sign in</button>
                             </div>
                             </div>

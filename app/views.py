@@ -8,7 +8,7 @@ This file creates your application.
 
 import MySQLdb
 from app import app, chat
-from flask import jsonify, render_template, request, redirect, url_for, flash
+from flask import jsonify, render_template, request, redirect, url_for, flash, session
 from app.forms import RegisterForm
 # from app.forms import LoginForm
 
@@ -35,12 +35,36 @@ def register():
         cur = mysql.connection.cursor()
         cur.execute("INSERT INTO user_profiles(full_name, username, email, password) VALUES (%s, %s, %s, %s)", (name, email, username, password))
         mysql.connection.commit()
+
+        cur.execute("CREATE TABLE {{username}}_compbot (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));")
+
+        cur.execute("CREATE TABLE {{username}}_admin (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));")
+        
         cur.close()
 
-        redirect(url_for('chat_compbot'))
+        redirect(url_for('chat_compbot', name=name))
 
     return redirect(url_for('home'))
 
+@app.route("/login/", methods=["POST"])
+def login():
+    if request.method=="POST":
+        email = request.form['email-login']
+        password = request.form['password-login']
+        
+        cur = mysql.connection.cursor()
+        cur.execute('SELECT * FROM user_profiles WHERE email = %s AND password = %s', (email, password,))
+        # Fetch one record and return result
+        account = cur.fetchone()
+        cur.close()
+
+        if account:
+            # Create session data, we can access this data in other routes
+            session['loggedin'] = True
+            session['name'] = account['fullname']
+            return redirect(url_for('chat_compbot', name=session['name']))
+
+    return redirect(url_for('home'))
 
 @app.route('/chat/compbot', methods=["GET","POST"])
 def chat_compbot():
