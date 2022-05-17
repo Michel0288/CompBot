@@ -1,0 +1,8 @@
+{
+    "intents": [
+    {"tag": "about",
+    "patterns": ["geography department","what is geography department mission","mission statement"],
+    "responses": ["The Department of Geography and Geology is a dynamic hub of interdisciplinary research and teaching encompassing not only the scientific study of the natural world but also the concerns of the humanities and social sciences. It provides students with a broad-based, research-led education and is one of the few academic Departments that synthesizes ideas and information from the geosciences, environment, economics, politics, society and culture. In a world characterized by rapid environmental change, our research and teaching adopt an holistic approach towards understanding our complex and diverse planet. See more info at https://www.mona.uwi.edu/dogg/about."]
+    }
+    ]
+}

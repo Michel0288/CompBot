@@ -1,0 +1,68 @@
+{
+    "intents": [
+    {"tag": "academic staff",
+    "patterns": ["who is Nagarani Ponakala","Nagarani Ponakala Contact Details","Nagarani Ponakala","Nagarani Ponakala the lecturer"],
+    "responses": ["Dr. Nagarani Ponakala\\nHead of Department & Senior Lecturer\\nnagarani.ponakala@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Ajani Ausaru","Ajani Ausaru Contact Details","Ajani Ausaru","Ajani Ausaru the lecturer"],
+    "responses": ["Mr. Ajani Ausaru\\nAssistant Lecturer & Bridging Programme Coordinator\\najani.ausaru02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Diptiranjan Behera","Diptiranjan Behera Contact Details","Diptiranjan Behera","Diptiranjan Behera the lecturer"],
+    "responses": ["Dr. Diptiranjan Behera\\nSenior Lecturer & Undergraduate Research Projects Coordinator\\ndiptiranjan.behera@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Roxanne Francis","Roxanne Francis Contact Details","Roxanne Francis","Roxanne Francis the lecturer"],
+    "responses": ["Ms. Roxanne Francis\\nSpecial Instructor & Outreach Deputy Coordinator\\nroxanne.francis@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Derjean Grant","Derjean Grant Contact Details","Derjean Grant","Derjean Grant the lecturer"],
+    "responses": ["Mr. Derjean Grant\\nTutor\\nderjean.grant@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Britta Hay","Britta Hay Contact Details","Britta Hay","Britta Hay the lecturer"],
+    "responses": ["Ms. Britta Hay\\nLecturer, Career Fair Coordinator, ERM Coordinator & Actuarial Club Advisor\\nbritta.hay@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Victor Job","Victor Job Contact Details","Victor Job","Victor Job the lecturer"],
+    "responses": ["Dr. Victor Job\\nLecturer & Books and Library Coordinator\\nvictor.job@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Samuel McDaniel","Samuel McDaniel Contact Details","Samuel McDaniel","Samuel McDaniel the lecturer"],
+    "responses": ["Dr. Samuel McDaniel\\nLecturer & Undergraduate Coordinator\\nsam.mcdaniel@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Raymond McEachin","Raymond McEachin Contact Details","Raymond McEachin","Raymond McEachin the lecturer"],
+    "responses": ["Dr. Raymond McEachin\\nLecturer & Olympiad Operational Sub-committee Coordinator\\nraymond.mceachin@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Kirk Morgan","Kirk Morgan Contact Details","Kirk Morgan","Kirk Morgan the lecturer"],
+    "responses": ["Dr. Kirk Morgan\\nLecturer & Outreach Coordinator\\nkirk.morgan02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Mahesha Narayana","Mahesha Narayana Contact Details","Mahesha Narayana","Mahesha Narayana the lecturer"],
+    "responses": ["Dr. Mahesha Narayana\\nSenior Lecturer & Graduate Coordinator\\nmahesha.narayana@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Alexandra Rodkina","Alexandra Rodkina Contact Details","Alexandra Rodkina","Alexandra Rodkina the lecturer"],
+    "responses": ["Dr. Alexandra Rodkina\\nProfessor Emerita\\nalexandra.rodkina@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Tamika Royal-Thomas","Tamika Royal-Thomas Contact Details","Tamika Royal-Thomas","Tamika Royal-Thomas the lecturer"],
+    "responses": ["Dr. Tamika Royal-Thomas\\nSenior Lecturer, Statistics Curriculum Coordinator, Examination Coordinator\\ntamika.royalthomas@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Nordia Thomas","Nordia Thomas Contact Details","Nordia Thomas","Nordia Thomas the lecturer"],
+    "responses": ["Dr. Nordia Thomas\\nLecturer & Career Fair Co-coordinator\\nnordia.thomas@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Damian Welsh","Damian Welsh Contact Details","Damian Welsh","Damian Welsh the lecturer"],
+    "responses": ["Mr. Damian Welsh\\nAdjunct Lecturer\\ndamian.welsh@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is W. St. Elmo Whyte","W. St. Elmo Whyte Contact Details","W. St. Elmo Whyte","W. St. Elmo Whyte the lecturer"],
+    "responses": ["Mr. W. St. Elmo Whyte\\nAdjunct Lecturer\\nwinston.whyte02@uwimona.edu.jm"]
+    }
+    ]
+}

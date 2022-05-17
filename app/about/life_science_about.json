@@ -1,0 +1,8 @@
+{
+    "intents": [
+    {"tag": "about",
+    "patterns": ["life science department","what is life science department mission","mission statement"],
+    "responses": ["The Department of Life Sciences seeks to realize the University's mission by making available, through excellence in teaching, research and outreach, high quality education and training for students of biology such that they are prepared to function as biologists in the regional and global arena. See more info at https://www.mona.uwi.edu/lifesciences/about.htm"]
+    }
+    ]
+}

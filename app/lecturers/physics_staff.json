@@ -1,0 +1,60 @@
+{
+    "intents": [
+    {"tag": "academic staff",
+    "patterns": ["who is Samuel Daniel","Samuel Daniel Contact Details","Samuel Daniel","Samuel Daniel the lecturer"],
+    "responses": ["Mr. Samuel Daniel\\nAdjunct Lecturer\\nsamuel.daniel@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Tannecia Stephenson","Tannecia Stephenson Contact Details","Tannecia Stephenson","Tannecia Stephenson the lecturer"],
+    "responses": ["Prof. Tannecia Stephenson\\nHOD\\ntannecia.stephenson02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Phylicia Ricketts","Phylicia Ricketts Contact Details","Phylicia Ricketts","Phylicia Ricketts the lecturer"],
+    "responses": ["Dr Phylicia Ricketts\\nAssistant Lecturer\\nphylicia.ricketts02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Andre Coy","Andre Coy Contact Details","Andre Coy","Andre Coy the lecturer"],
+    "responses": ["Dr. Andre Coy\\nLecturer\\nandre.coy02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Jayaka Campbell","Jayaka Campbell Contact Details","Jayaka Campbell","Jayaka Campbell the lecturer"],
+    "responses": ["Dr. Jayaka Campbell\\nLecturer\\njayaka.campbell02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Leary Myers","Leary Myers Contact Details","Leary Myers","Leary Myers the lecturer"],
+    "responses": ["Dr. Leary Myers\\nSenior Lecturer\\nleary.myers@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Leonardo Clarke","Leonardo Clarke Contact Details","Leonardo Clarke","Leonardo Clarke the lecturer"],
+    "responses": ["Dr. Leonardo Clarke\\nLecturer\\nleonardo.clarke02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Louis-Ray Harris","Louis-Ray Harris Contact Details","Louis-Ray Harris","Louis-Ray Harris the lecturer"],
+    "responses": ["Dr. Louis-Ray Harris\\nLecturer\\nlouisray.harris@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Marhoun Ferhat","Marhoun Ferhat Contact Details","Marhoun Ferhat","Marhoun Ferhat the lecturer"],
+    "responses": ["Dr. Marhoun Ferhat\\nSenior Lecturer\\nMarhoun.ferhat@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Randy Koon Koon","Randy Koon Koon Contact Details","Randy Koon Koon","Randy Koon Koonthe lecturer"],
+    "responses": ["Dr. Randy Koon Koon\\nLecturer\\nrandy.koonkoon@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Tanya Kerr","Tanya Kerr Contact Details","Tanya Kerr","Tanya Kerr the lecturer"],
+    "responses": ["Dr. Tanya Kerr\\nLecturer\\ntanya.innis@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Venkateswara Penugonda","Venkateswara Penugonda Contact Details","Venkateswara Penugonda","Venkateswara Penugonda the lecturer"],
+    "responses": ["Dr. Venkateswara Penugonda\\nLecturer\\nvenkateswara.penugonda@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Michael A. Taylor","Michael A. Taylor Contact Details","Michael A. Taylor","Michael A. Taylor the lecturer","who is Michael Taylor","Michael Taylor Contact Details","Michael Taylor","Michael Taylor the lecturer"],
+    "responses": ["Professor Michael A. Taylor\\nDean of the Faculty of Science and Technology; Senior Lecturer; Professor, Statistics Curriculum Coordinator, Examination Coordinator\\nmichael.taylor@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Mitko Voutchkov","Mitko Voutchkov Contact Details","Mitko Voutchkov","Mitko Voutchkov the lecturer"],
+    "responses": ["Professor Mitko Voutchkov\\nSenior Lecturer\\nmitko.voutchkov@uwimona.edu.jm"]
+    }
+    ]
+}

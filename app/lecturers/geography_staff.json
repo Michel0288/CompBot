@@ -1,0 +1,64 @@
+{
+    "intents": [
+    {"tag": "academic staff",
+    "patterns": ["who is David Barker","David Barker Contact Details","David Barker","David Barker the lecturer"],
+    "responses": ["David Barker\\nProfessor of Geography\\nGeography\\ndavid.barker@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Donovan Blissett","Donovan Blissett Contact Details","Donovan Blissett","Donovan Blissett the lecturer"],
+    "responses": ["Dr. Donovan Blissett\\nLecturer\\nGeography\\ndonovan.blissett@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Michael Burn","Michael Burn Contact Details","Michael Burn","Michael Burn the lecturer"],
+    "responses": ["Dr. Michael Burn\\nLecturer in Physical Geography\\nmichael.burn@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Donovan Campbell","Donovan Campbell Contact Details","Donovan Campbell","Donovan Campbell the lecturer"],
+    "responses": ["Dr. Donovan Campbell\\nHead of Department / Senior Lecturer\\ndonovan.campbell@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Taneisha Edwards","Taneisha Edwards Contact Details","Taneisha Edwards","Taneisha Edwards the lecturer"],
+    "responses": ["Dr. Taneisha Edwards\\nLecturer\\ntaneisha.edwards02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Thera Edwards","Thera Edwards Contact Details","Thera Edwards","Thera Edwards the lecturer"],
+    "responses": ["Dr. Thera Edwards\\nMap Curator and Lecturer\\nthera.edwards02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Sherene James-Williamson","Sherene James-Williamson Contact Details","Sherene James-Williamson","Sherene James-Williamson the lecturer"],
+    "responses": ["Dr. Sherene James-Williamson\\nSenior Lecturer and Museum Curator\\nsherene.james02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Robert Kinlocke","Robert Kinlocke Contact Details","Robert Kinlocke","Robert Kinlocke the lecturer"],
+    "responses": ["Dr. Robert Kinlocke\\nLecturer\\nrobert.kinlocke02@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Shaneica Lester","Shaneica Lester Contact Details","Shaneica Lester","Shaneica Lester the lecturer"],
+    "responses": ["Dr Shaneica Lester\\nLecturer in Human Geography\\nshaneica.lester@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Arpita Mandal","Arpita Mandal Contact Details","Arpita Mandal","Arpita Mandal the lecturer"],
+    "responses": ["Dr. Arpita Mandal\\nSenior Lecturer\\narpita.mandal@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is David Miller","David Miller Contact Details","David Miller","David Miller the lecturer"],
+    "responses": ["Dr. David Miller\\nLecturer\\ndavid.miller@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Simon F. Mitchell","Simon F. Mitchell Contact Details","Simon F. Mitchell","Simon F. Mitchell the lecturer"],
+    "responses": ["Prof. Simon F. Mitchell\\nProfessor of Sedimentary Geology and Research Director at the Earthquake Unit\\nsimon.mitchell@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Edward Robinson","Edward Robinson Contact Details","Edward Robinson","Edward Robinson the lecturer"],
+    "responses": ["Prof. Edward Robinson\\nProfessor Emeritus of Geology\\ntedforams@gmail.com"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Rose-Ann Smith","Rose-Ann Smith Contact Details","Rose-Ann Smith","Rose-Ann Smith the lecturer"],
+    "responses": ["Dr. Rose-Ann Smith\\nLecturer\\nroseann.williams@uwimona.edu.jm"]
+    },
+    {"tag": "academic staff",
+    "patterns": ["who is Thomas Stemann","Thomas Stemann Contact Details","Thomas Stemann","Thomas Stemann the lecturer"],
+    "responses": ["Dr. Thomas Stemannh\\nLecturer\\nthomas.stemann@uwimona.edu.jm"]
+    }
+    ]
+}

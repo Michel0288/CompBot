@@ -1,0 +1,235 @@
+{
+    "intents": [
+    {"tag": "greeting",
+    "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hey", "Hi"],
+    "responses": ["Hi stranger", "Yes?, how can I help", "Ey watsupp", "Hola", "Hey dude", "You again!"]
+    },
+    {"tag": "goodbye",
+    "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye"],
+    "responses": ["See you!", "Have a nice day", "Sure Bye", "Later dude", "Sayoonara", "Peace out", "Sure dude", "Ciao"]
+    },
+    {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome", "Sure dude"]
+    },
+    {"tag": "Dean Office help",
+        "patterns": ["How can the Faculty of Science and Technology, Dean’s Office help me?", "How can the faculty help me?", "How can the dean's office help me?", "How can the office help?"],
+        "responses": ["The mission of the Faculty of Science and Technology is to offer the students, the University Community and visitors the highest standard of service. We aim to provide accurate and complete information on the Faculty’s policies and procedures. We also offer academic advice and counseling and represent the students at various University bodies. "]
+    },
+    {"tag": "matriculate",
+        "patterns": ["What does it mean to matriculate?", "When do I matriculate?", "how do I matriculate?"],
+        "responses": ["When you have satisfied the entry requirements for the University and have actually enrolled in a programme."]
+    },
+    {"tag": "defer",
+        "patterns": ["Can I defer my acceptance?", "defer my acceptance", "how can I defer my acceptance?"],
+        "responses": ["A student has the option of deferring his/her offer of acceptance until the next academic year. However, this should be done online before the beginning of the academic year. On the other hand, if a student decides to defer after registration, this should be done by October 31. Subsequent to this, the request should be made through the Dean."]
+    },
+    {"tag": "orientation",
+        "patterns": ["Why should I attend General Orientation?", "General Orientation", "go to General Orientation?", "Why should I attend Orientation?", "Why should I go to Orientation?"],
+        "responses": ["Reasons for attending General Orientation:\\n • You receive assistance in your transition to the new University space\\n • You become familiar with your new environment as you are taken on Campus tours\\n • You are given tips about managing finances, living in hall, finding off campus accommodation, keeping safe and time management\\n • You learn of opportunities to get involved. The UWI experience is more than academics - you are encouraged to become actively engaged in outof-classroom activities. There are several co-curricular activities, clubs and societies and student development programmes available for you to get involved\\n • You are introduced to the registration process and registration requirements\\n • Through faculty orientation, you are offered academic advising. It is critical that you take advantage of academic counselling so that you can make informed choices that are in line with your career goals\\n • You learn about the availability of scholarships and bursaries\\n • You are introduced to employment opportunities on campus\\n • You can register for the First Year Experience (FYE) programme. It is the premier co-curricular activity EXCLUSIVELY for FIRST YEAR students\\n • You make final arrangements for accommodation and registration\\n • You meet old friends, restoring old friendships\\n • You also start the journey of forming new lifelong friendships "]
+    },
+    {"tag": "academic year",
+        "patterns": ["When does the academic year begins?", "When does the year begin?", "When does the school year begins?", "When does school start?", "academic year begins","school year begins"],
+        "responses": [" Normally, the academic year begins in the last week of August and ends the second week in May"]
+    },
+    {"tag": "photoid",
+        "patterns": ["Why do I need a Photo-ID for all activities?", "Why do I need an id?", "Why do I need a photo id?"],
+        "responses": ["A photo-ID is a means of protecting your records and preventing unlawful access to your academic information."]
+    },
+    {"tag": "preliminary courses",
+        "patterns": ["What are Preliminary Courses?","why should I do Preliminary Courses?","why do Preliminary Courses?"],
+        "responses": ["Preliminary Courses are equivalent to the Caribbean Advanced Proficiency Examinations (CAPE) and ‘A’ Levels. However, the credits that are accumulated from these examinations will not be counted as part of your general degree requirements. These credits can be used to advance students to Level I."]
+    },
+    {"tag": "Foundation Courses",
+        "patterns": ["What are Foundation Courses?", "why do Foundation Courses?", "How are Foundation Courses done?","what foundation courses should be done","what are the foundation courses?","what are the foundation courses for fst?","what are the foundation courses for the faculty?","what are the foundation courses for the faculty of science and technology?","how many foundation courses should I do?","foundation courses to be done"],
+        "responses": ["Foundation Courses are offered by the University to make the students’ education more rounded. All students within the Faculty are required to complete three (3) Foundation Courses. A student will not be qualified for the awarding of a degree if any of these courses are outstanding. It is also recommended that students register for only one foundation course per academic year.\\n 1. FOUN1014 OR FOUN1019-MANDATORY\\n 2. FOUN1301 \\n 3. FOUN1101 \\n Number 2 and 3 can be substituted by any Foreign Language"]
+    },
+    {"tag": "status",
+        "patterns": ["change my enrollment status","Can I change my enrollment status from full-time to part-time and vice versa?","can I change my status?","Can I change my enrollment status?","can I change my status from fulltime?","can i change my status from parttime?","can I change my status from full-time?","can i change my status from part-time?"],
+        "responses": ["Yes. A request for a change of status can be done via the Student Administration System (SAS). Final approval will then be given by the Dean or his Nominee. "]
+    },
+    {"tag": "courses in another faculty",
+        "patterns": ["register for out of faculty courses","Can I register for courses in other Faculties?", "Can I register for courses from other Faculties?", "Can I register for courses out of Faculty?"],
+        "responses": ["Yes. However, approval will only be granted by the Faculty in which the course is offered."]
+    },
+    {"tag": "major/minor in another faculty",
+        "patterns": ["Can I read for a major or minor in another Faculty?","Can major in another faculty?", "Can I minor in another faculty?", "out of faculty majors","out of faculty minors"],
+        "responses": [": Yes. In addition to the Faculty’s major, a student can read for a major or one or two minors from other Faculties. Out-of-Faculty majors and minors are governed by the regulations of the Faculty which offers the programme."]
+    },
+    {"tag": "registration deadline",
+        "patterns": ["time to register","Is there a deadline for making adjustments to my registration (adding and/or dropping courses)?", "registration deadline", "add drop deadline","deadline for dropping courses","deadline for registering for courses"],
+        "responses": ["After the official registration period has closed, you usually have an additional two (2) weeks to add or drop courses online. This is known as the Add/Drop Period. This information is readily available on the Student Administrative Area via the Student Administration System (SAS)."]
+    },
+    {"tag": "clash",
+        "patterns": ["timetable conflicts","What do I do if I am having timetable clashes?", "timetable clashes", "how to deal with clashes?","clashes on timetable","clash on timetable"],
+        "responses": ["Students are expected to select their courses carefully and where there are time conflicts, speak to a Department/Course representative to ascertain what alternate arrangements can be made. "]
+    },
+    {"tag": "courseoutline",
+        "patterns": ["information on course outlines","Where can I get information about the outline for courses offered within the Faculty?", "course outline", "where can I find course outlines?"],
+        "responses": ["You can get information about course offered by visiting the Faculty’s website as well as the Faculty’s Handbook."]
+    },
+    {"tag": "Voluntarily Withdraw",
+        "patterns": ["How do I 'Voluntarily Withdraw’ from the University?","Voluntarily Withdraw"],
+        "responses": ["By making an online request through SAS via the Automated Student Request Module (ARSM)."]
+    },
+    {"tag": "Mandatory Withdraw",
+        "patterns": ["If I withdraw (voluntarily or mandatory) from the University, will I be allowed to return?"],
+        "responses": ["Yes. You can return after one academic year. However, you must reapply to the University."]
+    },
+    {"tag": "Leave of Absence",
+        "patterns": ["year leave of absence","semester Leave of Absence","year LOA","semester LOA","How do I make a Leave of Absence (LOA) request for the semester or academic year?","How to make a LOA?","LOA","Leave of Absence","Request leave of Absence"],
+        "responses": ["By making an online request through SAS via the ARSM. Students are encouraged to make their application within the stipulated time frame to avoid a late penalty. In completing the online application, all supporting documents must be uploaded where applicable. In cases where supporting documents are medical reports, it must be submitted to and certified by the University Health Centre. LOA will not be granted for more than two consecutive semesters in the first request. Students may apply for an extension of leave; however, leave will not be granted for more than four semesters. All LOA requests must be made on a per semester basis. Students granted a LOA cannot use the benefits and rights given by the University throughout the duration of their leave. Please note that new students cannot request a LOA for semester 1; however, he/she can request a ‘Deferral of Offer.’ "]
+    },
+    {"tag": "graduate vs undergraduate",
+        "patterns": ["what is the difference between grad and undergrad courses","grad vs undergrad","What are the differences between undergraduate and graduate courses?","what is the difference between graduate and undergraduate courses?","difference between graduate and undergraduate courses","graduate and undergraduate courses","graduate vs undergraduate courses"],
+        "responses": ["Undergraduate courses are required for the completion of a Bachelor or Associate Degree, while graduate courses use an undergraduate degree as a pre-requisite requirement."]
+    },
+    {"tag": "class of degrees",
+        "patterns": ["class of degrees awarded by the university","class of degrees","What are the Class of Degrees that are awarded by the University to students in the Faculty of Science and Technology?"],
+        "responses": ["The Class of Degrees:\\n a. First Class Honours (GPA 3.60 & Above)\\n b. Upper Second Class Honours (GPA 3.00 – 3.59)\\n c. Lower Second Class Honours (GPA 2.50 – 2.99)\\n d. Pass (GPA 2.00 – 2.49)"]
+    },
+    {"tag": "register",
+        "patterns": ["How do I register?","How do I register for my courses?","what should I register for in level I","what should I register for in level II","what should I register for in level III","what should I register for in first year?","what should I register for in second year?","what I should I register for in third year?","courses I should do","what should I register for?","register for courses","How do I know which courses to register for?","What courses should I register for?","courses I should register for"],
+        "responses": ["Students should visit the Departments or Dean’s Office for academic counselling.\\n All students are required to select courses online. Students may complete the course selection process from any computer of their choice. Students can access the SAS website from The UWI Mona home page by clicking on the SAS link located on the lower left-hand panel of the Web page under the caption ‘Online Systems’. See Registration Guidelines for further information."]
+    },
+    {"tag": "register for my courses",
+        "patterns": ["English Language Proficiency Test","Where can I get information about the English Language Proficiency Test?","English test","What is english Proficiency test?","How to do English Proficiency test"],
+        "responses": ["Please contact the English Language Proficiency Test Unit, Department of Language, Linguistics and Philosophy in the Faculty of Humanities and Education."]
+    },
+    {"tag": "online learning",
+        "patterns": ["Are there tips for online learning?","tips for online learning"],
+        "responses": ["Yes, for each class:\\n1. Ensure your environment has good connectivity.\\n2. Ensure you are muted during the class.\\n3. Don't be afraid to ask questions in lecture: either by chat, or by audio after\\nraising your hand and being acknowledged.\\n4. If a presentation is anticipated ensure you are prepared to turn on your video."]
+    },
+    {"tag": "computer requirements",
+        "patterns": ["laptop requirements","what are the laptop requirements for fst?","what is the laptop requirement for the faculty?","laptop requirements","What are the computer requirements for online learning?","What are the computer requiremnets?","Computer requirements"],
+        "responses": ["Minimum Requirements:\\nLaptop/desktop: 8 GB of RAM, 128 GB of hard drive and Intel i5 (or equivalent) Processor\\nScreen Size: 12” (laptop); 15” (desktop)\\nSoftware: each course will have their own software requirements, however, The UWI Mona will provide Microsoft Office for students.\\nConnectivity: A stable internet connection (minimum speed 2Mbps down and 1Mbps up)"]
+    },
+    {"tag": "laptop requirements",
+        "patterns": ["laptop requirements","what are the laptop requirements for fst?","what is the laptop requirement for the faculty?","laptop requirements","What are the computer requirements for online learning?","What are the computer requiremnets?","Computer requirements"],
+        "responses": ["Minimum Requirements:\\nLaptop/desktop: 8 GB of RAM, 128 GB of hard drive and Intel i5 (or equivalent) Processor\\nScreen Size: 12” (laptop); 15” (desktop)\\nSoftware: each course will have their own software requirements, however, The UWI Mona will provide Microsoft Office for students.\\nConnectivity: A stable internet connection (minimum speed 2Mbps down and 1Mbps up)"]
+    },
+    {"tag": "examinations",
+        "patterns": ["When do I have examinations?","When do I have exams?"],
+        "responses": ["Examinations are governed by the Examinations Section. During the semester, students are given in-course tests and practical examinations,which are scheduled by each department. In some cases, there are midsemester examinations (usually six weeks after the semester has started) that are scheduled by the Examinations Section. Final examinations are organized by the Examinations Section and are scheduled in December for semester 1 and between April and May for semester 2. "]
+    },
+    {"tag": "examination schedule",
+        "patterns": ["exam timetable","what is my exam timetable?","What is my exam schedule?","How do I know the schedule for my mid-semester and final examinations?","examination schedule","exams schedule"],
+        "responses": ["Mid-semester examination schedule is posted on the Official Notice Board for the Examinations Section. The final examination schedule is also posted on the Official Notice Board for the Examinations Section at least one month prior to the start of examinations. Each student is provided with a personalized examination timetable that is accessible via SAS. This timetable is also sent to the primary email address of each student."]
+    },
+    {"tag": "missed exam",
+        "patterns": ["I missed my examination","what should i do if i missed my exam?","what should i do if i missed my examination?","what happens if I missed an examination?","I missed my exam"],
+        "responses": ["Candidates who are absent from an examination are asked to check with the Examinations Section. For further information visit the Examinations Section."]
+    },
+    {"tag": "different types of exams",
+        "patterns": ["what are the different types of exams?","what are the different types of exams offered by the faculty?","What are the different types of Examinations in the Faculty of Science and Technology?"],
+        "responses": ["All examinations shall be conducted by any one or more of the following:\\na. Written Examinations\\nb. Oral Examinations\\nc. Practical Examinations\\nd. Coursework "]
+    },
+    {"tag": "summer programme",
+        "patterns": ["Does the Faculty offer a summer programme for students who wish to complete the programme early?","summer programme"],
+        "responses": ["Yes. The Faculty offers a number of courses in the summer during June and July. This information is accessible through the Faculty’s notice boards and website."]
+    },
+    {"tag": "exchange programme",
+        "patterns": ["participate in the exchange programme","exchange programme","How do I participate in the University’s Student Exchange Programme?"],
+        "responses": ["If you:\\na. are registered as a full-time undergraduate student who has spent at least one academic year at the UWI;\\nb. are not in the last semester of your final year of study;\\nc. have proficiency in the host country’s language (if necessary);\\nd. have attained at least a Grade ‘B’ average, GPA 3.0 or the equivalent; and\\ne. have not been the subject of any disciplinary action and have no such action pending against him/her. For further information visit The Office of Campus Registrar International Students Office."]
+    },
+    {"tag": "GPA purpose",
+        "patterns": ["What is the purpose of the Grade Point Average (GPA)?","What is GPA"],
+        "responses": ["The GPA is the mechanism used for determining the Class of Degrees. It allows students and graduates to link easily with programmes in other institutions around the world. For further information visit Grading Point Average Regulations."]
+    },
+    {"tag": "GPA calculation",
+        "patterns": ["Can I calculate my GPA on my own?","calculate GPA"],
+        "responses": ["Yes. To reassure themselves about the conversion process and become familiar with applying the formulae, students are encouraged to use the GPA Calculator to calculate their degree and cumulative GPAs. The GPA calculator is available in the SAS portal."]
+    },
+    {"tag": "Academic warning",
+        "patterns": ["What is an academic warning?","When is a student on Academic Warning or Required to Withdraw?","academic warning"],
+        "responses": ["Student with a GPA in semester 1 or 2 that is less than 2.00 will receive a warning notification. If a student is warned for any two successive semesters for an academic year, he/she will be required to withdraw from the University at the end of that academic year. However, a Waiver of Requirement to Withdraw can be granted, usually once, and at the discretion of the Dean. However, if not granted, the student will be required to sit out for at least one year, after which he/she would be required to re-apply in order to be readmitted to the University. "]
+    },
+    {"tag": "textbooks",
+        "patterns": ["Will I need textbooks?","Should I buy textbooks?"],
+        "responses": ["Yes. Textbooks are needed to maximize your performance. These can be purchased or rented at the University Bookshop or borrowed from the Science & Engineering Branch Library."]
+    },
+    {"tag": "required to pay fees",
+        "patterns": ["Should I pay my tuition?","Should I pay fees?","Are students required to pay fees to attend the UWI?"],
+        "responses": ["All students are expected to contribute to the cost of their education at The UWI. However, the Government of the contributing countries subsidizes the education of their students. Students are not considered as registered students until financial obligations have been met."]
+    },
+    {"tag": "pay fees",
+        "patterns": ["How and where should I pay the fees?","wheres should I pay fees?","where should I pay my tuition?"],
+        "responses": ["Payments can be made through The UWI Bursary Cashier, Paymaster, Bill Express, UWI Online System, EDUCOM Credit Union, Jamaica National and National Commercial Bank (Island wide). Payments made at any of the payment outlets (Paymaster, Bill Express, Jamaica National and National Commercial Bank) are posted to the students’ accounts the evening of the same day payment is made."]
+    },
+    {"tag": "register before payment",
+        "patterns": ["Can I register for courses before payment?"],
+        "responses": ["Yes. However, payment of fees must be made within the stipulated time frame given by the University."]
+    },
+    {"tag": "financial clearance",
+        "patterns": ["How do I get Financial Clearance?","how do I get financially cleared?","financial clearance","financially cleared"],
+        "responses": ["Financial Clearance is granted under the following conditions:\\na. All financial obligations to the University must be cleared for at least the first semester.\\nb. If the student is using the Students Loan Bureau (SLB), the miscellaneous fees and other fees must be paid by the student. In addition, information from SLB that the loan process has been completed must be conveyed to the University.\\nc. Students who are nationals of Trinidad and Tobago must pay their miscellaneous fees and submit a completed GATE form."]
+    },
+    {"tag": "fee payment options",
+        "patterns": ["What are the fee payment options that are available to students?"],
+        "responses": ["In terms of fee payment, the following options are available:\\n a. Students may pay for the academic year in one payment for tuition, miscellaneous and residence. This must be done by the given deadline for the first semester of the relevant period.\\n b. Students may pay per semester for tuition, miscellaneous and residence and this must be done by the stipulated deadline for each semester."]
+    },
+    {"tag": "miscellaneous fees",
+        "patterns": ["Can I pay for my miscellaneous fees and get my ID?"],
+        "responses": ["Yes. However, students are encouraged to have their receipt in their possession."]
+    },
+    {"tag": "miscellaneous fees",
+        "patterns": ["Fee deadline","What happens if I do not pay my fees by the given deadline?"],
+        "responses": ["All payments are expected to be made by the deadline stipulated. If you realized that you will not meet the stipulated deadline, seek financial counselling at Student Administrative Services Section (SASS). Also, kindly note that once fees are outstanding for the current semester a late fine of 1% will be applied for each month that the balance remains outstanding. Additionally, once the balance is not cleared at the end of the semester, students will not be able to access sections of the UWI system, in particular, the ability to register for semester 2. "]
+    },
+    {"tag": "payment plan",
+        "patterns": ["Does the University offer a payment plan?"],
+        "responses": ["Yes. Payment plans are available on a per semester basis where students are granted a three-month period to clear all balances. The criteria are as follows: \\na. Payment plans are not provided for miscellaneous fees (which are non-refundable and must be paid in full) but are available for hall fees.\\nb. 25% of the tuition fee must be paid at the time of application.\\nc. There should be no prior monies owed to the University."]
+    },
+    {"tag": "financial difficulties",
+        "patterns": ["what happens if I have financial difficulties?","what happens if im faced with financial difficulties","Where do I go if I am faced with financial difficulties?","financial difficulties"],
+        "responses": ["Please consult the Office of Student Financing, Guild of Students Office or Student Administrative Services Section (SASS)."]
+    },
+    {"tag": "scholarships",
+        "patterns": ["Can I get bursaries?","where can i go to get scholarships?","Can I get scholarships?","Are there any scholarships for new students?"],
+        "responses": ["The Scholarships and Bursaries that are offered by the Office of Student Financing are primarily designed for applicants entering second and third years. However, there are scholarships that are given by external agencies, but are facilitated by the Office of Student Financing. Deadline for application is usually May 31."]
+    },
+    {"tag": "honour roll",
+        "patterns": ["How do I make Dean List","How do I make honour roll","How do I make academic commendation","How do I qualify for the Dean’s Honour Roll or Academic Commendation?","Acdamice Commendation","Deans Honour Roll","Honour Roll"],
+        "responses": ["A Student who receives a Grade Point Average of 3.60 and above for both semesters of an academic year with a letter grade not lower than a B+ will be eligible for the Dean’s Honour Roll. However, if a student only satisfies the criterion for one semester, he or she will receive an Academic Commendation (conditions apply). The failure of any course will automatically disqualify students from receiving any of the awards."]
+    },
+    {"tag": "scholarship revoked",
+        "patterns": ["If I am unable to maintain the required GPA for my Scholarship, will it be revoked?"],
+        "responses": ["A scholarship may be revoked if the student performance is below the required GPA (cumulative) for the academic year. "]
+    },
+    {"tag": "faculty awards",
+        "patterns": ["Are there awards that are offered by the Faculty?"],
+        "responses": ["Each department within the Faculty offers Departmental Awards to students that are usually course and or major specific."]
+    },
+    {"tag": "academic excellence",
+        "patterns": ["Does the Faculty of Science and Technology award students for academic excellence?"],
+        "responses": ["Yes. The Faculty hosts an Annual Awards Ceremony to honour students who have obtained academic excellence."]
+    },
+    {"tag": "clubs and societies",
+        "patterns": ["what are the clubs and societies?","clubs and societies","Are there clubs and societies in the Faculty and how can I be a part of it?"],
+        "responses": ["Yes. Each department has club(s) or societies to which you can be involved. These include:\\nDepartment of Chemistry\\n  • Chemical Society\\nDepartment of Computing\\n  • Higher Achievers Commanding Knowledge Enabling Research  • Sharing (Hackers Club)\\nDepartment of Geography & Geology\\n  • UWI Geographical Society\\n  • UWI Geological Society\\n  • UWI Mona Student Chapter American Association of Petroleum Geologist\\nDepartment of Life Sciences\\n  • Biology Students Association\\nDepartment of Mathematics\\n  • Actuarial Science Club\\nDepartment of Physics\\n  • Alternative Energy Research Society\\n  • Astronomy Club\\n  • Medical Physics Club\\n  • The Electronics Club"]
+    },
+    {"tag": "motto",
+        "patterns": ["University motto","what is the university motto?","What does the University's motto Oriens Ex Occidente Lux means?"],
+        "responses": ["Light Rising from the West"]
+    },
+    {"tag": "religious university",
+        "patterns": ["Is The UWI a Religious University?"],
+        "responses": ["No. The UWI is a secular institution of higher education embracing no religion or creed and open to men and women of all faiths and traditions, or no religious beliefs, purely on the basis of merit.\\nThe UWI operates within a framework of values that espouses academic excellence, individual rights and security, responsibility to community and public service, and ethical and transparent operations of government and business."]
+    },
+    {"tag": "campuses",
+        "patterns": ["How many major campuses are there for the University of the West Indies?","The university of the West indies campuses","Uwi campuses","how many different campus does uwi have?"],
+        "responses": ["The University of the West Indies has five (5) major campuses, all of which are located in the Caribbean:\\n a. Mona Campus, Jamaica\\n b. Cave Hill Campus, Barbados\\n c. Five Islands Campus, Antigua and Barbuda\\n d. Open Campus\\n e. St. Augustine Campus, Trinidad and Tobago"]
+    },
+    {"tag": "credits for semester",
+        "patterns": ["HOW MANY CREDITS CAN I REGISTER FOR EACH SEMESTER?","how many credits do I need to register for?","how many credits does a fulltime student need to register for?","how many credits does a parttime student need to register for?"],
+        "responses": ["Full-time Student Registration: A full-time student can register for a minimum of 33 credits and a maximum of 39 credits per year. That is, 18 credits per semester (a combination of 2, 3 and/or 6 credits courses) AND one Foundation Course per year.\\nPart-time Student Registration: A part-time student can register for a minimum of 18 credits and a maximum of 27 credits per year. That is, 12 credits per semester (a combination of 2, 3 and/or 6 credits courses) AND one Foundation Course per year"]
+    },
+    {"tag": "credits requirements",
+        "patterns": ["what are the credit requirements for fst?","what is the credit requirements for the faculty","what are the credit requirements?","how many credits do I need to graduate?","how many credits do I need to get my degree?"],
+        "responses": ["93 credits(minimum):\\n Level I: 24 credits (18 must be in faculty)\\n Level II & III: 60 credits (In faculty major must be completed. However, the remaining credits are strongly encouraged to be used for minors or another major.)\\n Foundation Courses: 9 credits"]
+    }
+
+
+]
+}
+

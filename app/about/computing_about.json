@@ -1,0 +1,16 @@
+{
+    "intents": [
+    {"tag": "mission",
+    "patterns": ["what is computing department mission","mission statement"],
+    "responses": ["Our Mission Statement reflects the primary purpose of our University, that is, the reason for its existence. To advance education and create knowledge through excellence inn teaching, research, innovation, public service, intellectual leadership and outreach in order to support the  inclusive (social, economic, political, cultural, environmental) development of the Caribbean region and beyond."]
+    },
+    {"tag": "history",
+    "patterns": ["What is the computing department history?", "history"],
+    "responses": ["Although the year 1992 saw the birth of the then, Computer Science Department, this was not the beginning of the study of Computer Science at the University, however, as the discipline was formerly a part of the then Mathematics Department. Several mathematicians expressed their desire to explore Computing, and its relationship to Mathematics. This interest eventually led to the introduction of Computer Science subjects into the Mathematics curriculum in the mid 1970's. Shortly after this introduction, Computer Science became its own sub-department, allowing students to major in this area.\\n\\nIn the early 1990's, the University community decided that Science and Technology should be given a higher priority than it previously had. Computer Science was identified, within this broad heading, as a major area of focus for the then Natural Science Faculty. To increase Computer Science's viability and potential to have the desired national and regional impact, it was then made its own department.\\n\\nThis separation of Mathematics and Computer Science did not last long, as the University, in one its restructuring exercises made the two departments one again in 1996. In 2009 the University community decided to make Computing into a full department again."]
+    },
+    {"tag": "Philosophy",
+    "patterns": ["Philosophy", "computing Philosophy", "computing department Philosophy"],
+    "responses": ["We are committed to delivering high quality taught programmes that prepare students to compete in a global marketplace for computing expertise. We believe that the best way to prepare students for the rapidly changing world of computing is to give them the skills and knowledge that enables them to readily adapt to those changes. Therefore our programmes expose students to the theoretical underpinnings of the subject, while still requiring them to be able to apply that knowledge in practical and tangible ways that solve real problems."]
+    }
+    ]
+}
