@@ -6,12 +6,14 @@ This file creates your application.
 """
 
 
-from app import app, db, login_manager
+import MySQLdb
+from app import app
 from flask import render_template, request, redirect, url_for, flash
-from flask_login import login_user, logout_user, current_user, login_required
+from app.forms import RegisterForm
 # from app.forms import LoginForm
-from app.models import UserProfile
-from werkzeug.security import check_password_hash
+
+from app import mysql
+
 ###
 # Routing for your application.
 ###
@@ -21,22 +23,24 @@ def home():
     """Render website's home page."""
     return render_template('home.html')
 
+@app.route("/register/", methods=["POST"])
+def register():
+    if request.method=="POST":
+        name = request.form['name']
+        email = request.form['email']
+        username = request.form['username']
+        password = request.form['password']
+        
+        #cur = MySQLdb.connect("localhost", "root", "", "capstone")
+        cur = mysql.connection.cursor()
+        cur.execute("INSERT INTO user_profiles(full_name, username, email, password) VALUES (%s, %s, %s, %s)", (name, email, username, password))
+        mysql.connection.commit()
+        cur.close()
 
-@app.route('/team/')
-def team():
-    """Render the website's team page."""
-    return render_template('team.html', name="CompBot")
+        redirect(url_for('chat_compbot'))
 
+    return redirect(url_for('home'))
 
-@app.route('/demo/')
-def demo():
-    """Render the website's demo page."""
-    return render_template('demo.html', name="CompBot")
-
-@app.route('/chat/')
-def chat():
-    """Render the website's chat page."""
-    return render_template('chat.html', name="CompBot")
 
 @app.route('/chat/compbot')
 def chat_compbot():
@@ -48,12 +52,12 @@ def chat_admin():
     """Render the website's chat page for admin"""
     return render_template('admin.html')
 
-@app.route("/logout")
-@login_required
-def logout():
-    logout_user()
-    flash('You have been logged out.', 'danger')
-    return redirect(url_for('home'))
+# @app.route("/logout")
+# @login_required
+# def logout():
+#     logout_user()
+#     flash('You have been logged out.', 'danger')
+#     return redirect(url_for('home'))
 
 
 ###
@@ -62,9 +66,9 @@ def logout():
 
 # user_loader callback. This callback is used to reload the user object from
 # the user ID stored in the session
-@login_manager.user_loader
-def load_user(id):
-    return UserProfile.query.get(int(id))
+# @login_manager.user_loader
+# def load_user(id):
+#     return UserProfile.query.get(int(id))
 
 
 # Flash errors from the form if validation fails
