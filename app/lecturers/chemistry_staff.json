@@ -2,87 +2,87 @@
     "intents": [
     {"tag": "academic staff",
     "patterns": ["who is Ainka Brown","Anika Brown Contact Details","Anika Brown","Anika Brown the lecturer"],
-    "responses": ["Anika Brown\\nLecturer\\nOrganic Chemistry\\nainka.brown02@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/brown"]
+    "responses": ["Anika Brown<br>Lecturer<br>Organic Chemistry<br>ainka.brown02@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/brown"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Norbert Campbell","Norbert Campbell Contact Details","Norbert Campbell","Norbert Campbell the lecturer"],
-    "responses": ["Norbert Campbell\\nLecturer & OESH Programme Coordinator\\nOESH\\nnorbert.campbell@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/norbert-campbell"]
+    "responses": ["Norbert Campbell<br>Lecturer & OESH Programme Coordinator<br>OESH<br>norbert.campbell@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/norbert-campbell"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Michael Coley","Michael Coley Contact Details","Michael Coley","Michael Coley the lecturer"],
-    "responses": ["Michael Coley\\nLecturer\\nApplied Chemistry\\nmichael.coley@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/coley"]
+    "responses": ["Michael Coley<br>Lecturer<br>Applied Chemistry<br>michael.coley@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/coley"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Nadale Downer-Riley","Nadale Downer-Riley Contact Details","Nadale Downer-Riley","Nadale Downer-Riley the lecturer"],
-    "responses": ["Nadale Downer-Riley\\nSenior Lecturer\\nOrganic Chemistry\\nnadale.downer02@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/downer"]
+    "responses": ["Nadale Downer-Riley<br>Senior Lecturer<br>Organic Chemistry<br>nadale.downer02@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/downer"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Winklet Gallimore","Winklet Gallimore Contact Details","Winklet Gallimore","Winklet Gallimore the lecturer"],
-    "responses": ["Winklet Gallimore\\nSenior Lecturer\\nOrganic Chemistry\\nwinklet.gallimore@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/gallimore"]
+    "responses": ["Winklet Gallimore<br>Senior Lecturer<br>Organic Chemistry<br>winklet.gallimore@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/gallimore"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Andrea Goldson-Barnaby","Andrea Goldson-Barnaby Contact Details","Andrea Goldson-Barnaby","Andrea Goldson-Barnaby the lecturer"],
-    "responses": ["Andrea Goldson-Barnaby\\nSenior Lecturer\\nFood Chemistry\\nandrea.barnaby@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/goldson"]
+    "responses": ["Andrea Goldson-Barnaby<br>Senior Lecturer<br>Food Chemistry<br>andrea.barnaby@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/goldson"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Debbie-Ann Gordon-Smith","Debbie-Ann Gordon-Smith Contact Details","Debbie-Ann Gordon-Smith","Debbie-Ann Gordon-Smith the lecturer"],
-    "responses": ["Debbie-Ann Gordon-Smith\\nLecturer\\nApplied Chemistry\\ndebbieann.gordonsmith@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/node/43"]
+    "responses": ["Debbie-Ann Gordon-Smith<br>Lecturer<br>Applied Chemistry<br>debbieann.gordonsmith@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/node/43"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Mark Lawrence","Mark Lawrence Contact Details","Mark Lawrence","Mark Lawrence the lecturer"],
-    "responses": ["Mark Lawrence\\nSenior Lecturer\\nPhysical Chemistry\\nmark.lawrence02@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/node/31"]
+    "responses": ["Mark Lawrence<br>Senior Lecturer<br>Physical Chemistry<br>mark.lawrence02@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/node/31"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Paul Maragh","Paul Maragh Contact Details","Paul Maragh","Paul Maragh the lecturer"],
-    "responses": ["Paul Maragh\\nSenior Lecturer\\nPhysical Chemistry\\npaul.maragh@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/maragh"]
+    "responses": ["Paul Maragh<br>Senior Lecturer<br>Physical Chemistry<br>paul.maragh@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/maragh"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Joyann Marks","Joyann Marks Contact Details","Joyann Marks","Joyann Marks the lecturer"],
-    "responses": ["Joyann Marksh\\nLecturer\\nApplied Chemistry\\njoyann.marks@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/marks"]
+    "responses": ["Joyann Marksh<br>Lecturer<br>Applied Chemistry<br>joyann.marks@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/marks"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Donna Minott Kates","Donna Minott Kates Contact Details","Donna Minott Kates","Donna Minott Kates the lecturer"],
-    "responses": ["Donna Minott Kates\\nSenior Lecturer and Head of Department\\nFood Chemistry\\ndonna.minott@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/minnott"]
+    "responses": ["Donna Minott Kates<br>Senior Lecturer and Head of Department<br>Food Chemistry<br>donna.minott@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/minnott"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Willem Mulder Kates","Willem Mulder Contact Details","Willem Mulder Kates","Willem Mulder the lecturer"],
-    "responses": ["Willem Mulder Kates\\nProfessor\\nPhysical Chemistry\\nwillem.mulder@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/mulder"]
+    "responses": ["Willem Mulder Kates<br>Professor<br>Physical Chemistry<br>willem.mulder@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/mulder"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Peter Nelson","Peter Nelson Contact Details","Peter Nelson Kates","Peter Nelson the lecturer"],
-    "responses": ["Peter Nelson\\nSenior Lecturer\\nPhysical Chemistry\\npeter.nelson02@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/peter-nelson"]
+    "responses": ["Peter Nelson<br>Senior Lecturer<br>Physical Chemistry<br>peter.nelson02@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/peter-nelson"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Patrice Peart","Patrice Peart Contact Details","Patrice Peart","Patrice Peart the lecturer"],
-    "responses": ["Patrice Peart\\nLecturer\\nFood Chemistry\\npatrice.peart@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/node/38"]
+    "responses": ["Patrice Peart<br>Lecturer<br>Food Chemistry<br>patrice.peart@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/node/38"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Roy Porter","Roy Porter Contact Details","Roy Porter","Roy Porter the lecturer"],
-    "responses": ["Roy Porter\\nSenior Lecturer\\nOrganic Chemistry\\nroy.porter@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/porter"]
+    "responses": ["Roy Porter<br>Senior Lecturer<br>Organic Chemistry<br>roy.porter@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/porter"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Vaughn Rattray","Vaughn Rattray Contact Details","Vaughn Rattray","Vaughn Rattray the lecturer"],
-    "responses": ["Vaughn Rattray\\nLecturer\\nApplied Chemistry\\nvaughn.rattray@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/rattray"]
+    "responses": ["Vaughn Rattray<br>Lecturer<br>Applied Chemistry<br>vaughn.rattray@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/rattray"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Paul Reese","Paul Reese Contact Details","Paul Reese","Paul Reese the lecturer"],
-    "responses": ["Paul Reese\\nProfessor\\nOrganic Chemistry\\npaul.reese@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/reese"]
+    "responses": ["Paul Reese<br>Professor<br>Organic Chemistry<br>paul.reese@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/reese"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Novelette Sadler-McKnight","Novelette Sadler-McKnight Contact Details","Novelette Sadler-McKnight","Novelette Sadler-McKnight the lecturer"],
-    "responses": ["Novelette Sadler-McKnight\\nLecturer\\nInorganic Chemistry\\nnovelette.sadlermcknight@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/sadler"]
+    "responses": ["Novelette Sadler-McKnight<br>Lecturer<br>Inorganic Chemistry<br>novelette.sadlermcknight@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/sadler"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Marvadeen Singh-Wilmot","Marvadeen Singh-Wilmot Contact Details","Marvadeen Singh-Wilmot","Marvadeen Singh-Wilmot the lecturer"],
-    "responses": ["Marvadeen Singh-Wilmot\\nSenior Lecturer\\nInorganic Chemistry\\nmarvadeen.singhwilmot@uwimona.edu.jm\\nhttps://www.mona.uwi.edu/chemistry/staff/singh"]
+    "responses": ["Marvadeen Singh-Wilmot<br>Senior Lecturer<br>Inorganic Chemistry<br>marvadeen.singhwilmot@uwimona.edu.jm<br>https://www.mona.uwi.edu/chemistry/staff/singh"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Nickeisha Stephenson","Nickeisha Stephenson Contact Details","Nickeisha Stephenson","Nickeisha Stephenson the lecturer"],
-    "responses": ["Nickeisha Stephenson\\nLecturer\\nInorganic Chemistry\\nnickeisha.stephenson@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/stephenson"]
+    "responses": ["Nickeisha Stephenson<br>Lecturer<br>Inorganic Chemistry<br>nickeisha.stephenson@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/stephenson"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Ian Thompson","Ian Thompson Contact Details","Ian Thompson","Ian Thompson the lecturer"],
-    "responses": ["Ian Thompson\\nLecturer\\nFood Chemistry\\nian.thompson02@uwimona.edu.jm\\nView Profile at https://www.mona.uwi.edu/chemistry/staff/thompson"]
+    "responses": ["Ian Thompson<br>Lecturer<br>Food Chemistry<br>ian.thompson02@uwimona.edu.jm<br>View Profile at https://www.mona.uwi.edu/chemistry/staff/thompson"]
     }
     ]
 }

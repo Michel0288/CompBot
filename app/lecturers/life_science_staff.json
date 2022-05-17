@@ -2,69 +2,69 @@
     "intents": [
     {"tag": "academic staff",
     "patterns": ["who is Dwight Robinson","Dwight Robinson Contact Details","Dwight Robinson","Dwight Robinson the lecturer"],
-    "responses": ["Dr. Dwight Robinson\\nHead of Department & Senior Lecturer, Entomology & Pest Management\\ndwight.robinson@uwimona.edu.jm"]
+    "responses": ["Dr. Dwight Robinson<br>Head of Department & Senior Lecturer, Entomology & Pest Management<br>dwight.robinson@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Noureddine Benkeblia","Noureddine Benkeblia Contact Details","Noureddine Benkeblia","Noureddine Benkeblia the professor"],
-    "responses": ["Prof. Noureddine Benkeblia\\nProfessor, Crop Science\\nnoureddine.benkeblia@uwimona.edu.jm"]
+    "responses": ["Prof. Noureddine Benkeblia<br>Professor, Crop Science<br>noureddine.benkeblia@uwimona.edu.jm"]
     },
 
     {"tag": "academic staff",
     "patterns": ["who is Frederick Boyd","Frederick Boyd Contact Details","Frederick Boyd","Frederick Boyd the lecturer"],
-    "responses": ["Dr. Frederick Boyd\\nLecturer, Plant Taxonomy and Medicinal Botany\\nfrederick.boyd@uwimona.edu.jm"]
+    "responses": ["Dr. Frederick Boyd<br>Lecturer, Plant Taxonomy and Medicinal Botany<br>frederick.boyd@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Jane Cohen","Jane Cohen Contact Details","Jane Cohen","Jane Cohen the lecturer"],
-    "responses": ["Dr. Jane Cohen\\nLecturer Plant Physiology\\njane.cohen@uwimona.edu.jmd"]
+    "responses": ["Dr. Jane Cohen<br>Lecturer Plant Physiology<br>jane.cohen@uwimona.edu.jmd"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Eric Garraway","Eric Garraway Contact Details","Eric Garraway","Eric Garraway the lecturer"],
-    "responses": ["Dr. Eric Garraway\\nSenior Lecturer, Entomology & Conservation Biology\\neric.garraway@uwimona.edu.jm"]
+    "responses": ["Dr. Eric Garraway<br>Senior Lecturer, Entomology & Conservation Biology<br>eric.garraway@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Tannice Hall","Tannice Hall Contact Details","Tannice Hall","Tannice Hall the lecturer"],
-    "responses": ["Dr. Tannice Hall\\nAssistant Lecturer, Biology\\ntannice.hall02@uwimona.edu.jm"]
+    "responses": ["Dr. Tannice Hall<br>Assistant Lecturer, Biology<br>tannice.hall02@uwimona.edu.jm"]
     },
     
     {"tag": "academic staff",
     "patterns": ["who is Eric Hyslop","Eric Hyslop Contact Details","Eric Hyslop","Eric Hyslop the instructor"],
-    "responses": ["Dr. Eric Hyslop\\nSenior Lecturer, Freshwater Ecology & Fish Biology\\neric.hyslop@uwimona.edu.jm"]
+    "responses": ["Dr. Eric Hyslop<br>Senior Lecturer, Freshwater Ecology & Fish Biology<br>eric.hyslop@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Christine Lawson","Christine Lawson Contact Details","Christine Lawson","Christine Lawson the lecturer"],
-    "responses": ["Ms. Christine Lawson\\nAssistant Lecturer, Biology\\nchristine.lawson@uwimona.edu.jm"]
+    "responses": ["Ms. Christine Lawson<br>Assistant Lecturer, Biology<br>christine.lawson@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Kurt McLaren","Kurt McLaren Contact Details","Kurt McLaren","Kurt McLaren the lecturer"],
-    "responses": ["Dr. Kurt McLaren\\nLecturer, Forest Ecology\\nkurt.mclaren@uwimona.edu.jm"]
+    "responses": ["Dr. Kurt McLaren<br>Lecturer, Forest Ecology<br>kurt.mclaren@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Suzanne Palmer","Suzanne Palmer Contact Details","Suzanne Palmer","Suzanne Palmer the lecturer"],
-    "responses": ["Dr. Suzanne Palmer\\nLecturer, Coral Reef Ecology\\nsuzanne.palmer@uwimona.edu.jm"]
+    "responses": ["Dr. Suzanne Palmer<br>Lecturer, Coral Reef Ecology<br>suzanne.palmer@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Gale Persad","Gale Persad Contact Details","Gale Persad","Gale Persad the lecturer"],
-    "responses": ["Dr. Gale Persad\\nLecturer, Cell Biology & Oceanography\\ngale.persad@uwimona.edu.jm"]
+    "responses": ["Dr. Gale Persad<br>Lecturer, Cell Biology & Oceanography<br>gale.persad@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Ralph Robinson","Ralph Robinson Contact Details","Ralph Robinson","Ralph Robinson the lecturer"],
-    "responses": ["Prof. Ralph Robinson\\nProfessor, Parasitology\\nralph.robinson@uwimona.edu.jm"]
+    "responses": ["Prof. Ralph Robinson<br>Professor, Parasitology<br>ralph.robinson@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Philip Rose","Philip Rose Contact Details","Philip Rose","Philip Rose the lecturer"],
-    "responses": ["Dr. Philip Rose\\nLecturer, Botany\\nphilip.rose02@uwimona.edu.jm"]
+    "responses": ["Dr. Philip Rose<br>Lecturer, Botany<br>philip.rose02@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Paula Tennant","Paula Tennant Contact Details","Paula Tennant","Paula Tennant the lecturer"],
-    "responses": ["Prof. Paula Tennant\\nProfessor, Molecular Plant Pathology\\npaula.tennant@uwimona.edu.jm"]
+    "responses": ["Prof. Paula Tennant<br>Professor, Molecular Plant Pathology<br>paula.tennant@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Mona Webber","Mona Webber Contact Details","Mona Webber","Mona Webber the lecturer"],
-    "responses": ["Prof. Mona Webber\\nProfessor, Marine Ecology Director, Centre for Marine Sciences\\nmona.webber@uwimona.edu.jm"]
+    "responses": ["Prof. Mona Webber<br>Professor, Marine Ecology Director, Centre for Marine Sciences<br>mona.webber@uwimona.edu.jm"]
     },
     {"tag": "academic staff",
     "patterns": ["who is Byron Wilson","Byron Wilson Contact Details","Byron Wilson","Byron Wilson the lecturer"],
-    "responses": ["Prof. Byron Wilson\\nProfessor, Herpetology & Conservation Ecology\\nbyron.wilson@uwimona.edu.jm"]
+    "responses": ["Prof. Byron Wilson<br>Professor, Herpetology & Conservation Ecology<br>byron.wilson@uwimona.edu.jm"]
     }
     ]
 }

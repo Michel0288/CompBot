@@ -17,7 +17,7 @@ words=[]
 classes = []
 documents = []
 ignore_words = ['?', '!']
-data_file = open('app/general/general.json', encoding='utf-8').read()
+data_file = open('app/about/computing_about.json', encoding='utf-8').read()
 intents = json.loads(data_file)
 
 
@@ -90,6 +90,6 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 
 #fitting and saving the model
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
-model.save('general.h5', hist)
+model.save('computing_about.h5', hist)
 
 print("model created")

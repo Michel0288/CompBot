@@ -3,7 +3,6 @@ $('#first').on("click", ()=>{
     // GENERAL
     if($('#general.tab-pane').hasClass('active')){
         $('#message-to-send').prop("disabled", false);
-
         let message = $("#message-to-send");
         let sender = $("#message-sender");
         sender.on("click", ()=>{
@@ -11,7 +10,8 @@ $('#first').on("click", ()=>{
                 $.ajax("/chat/compbot", {
                     type: "POST",
                     data: {
-                        userinput: $.trim(message.val())
+                        userinput: $.trim(message.val()),
+                        modeltype: 'general'
                     }
                     }).done(function(result) {                        
                         $("#chatbox").append(`
@@ -81,7 +81,29 @@ $('#first').on("click", ()=>{
                     }  , 3000 );
                     }).fail(function(result) {
                         // $("#message").html("There seems to be an error.");
-                        alert('error');
+                        let answer=confirm('I could not retrieve an accurate answer to this question. Do you want me to send this to the admin?');
+                        if(answer){
+                            window.location.href="/chat/admin"
+                        }else{
+                            $("#chatbox").append(`       
+                            <!-- THIS IS THE BOT TYPING -->
+                            <div id="remove-typing" class="message">
+                                <a href="#" class="avatar avatar-responsive">
+                                    <img class="avatar-img" src="../static/assets/img/avatars/2.jpg" alt="">
+                                </a>
+        
+                                <div class="message-inner">
+                                    <div class="message-body">
+                                        <div class="message-content">
+                                            <div class="message-text">
+                                                <p>Do you have another question?<span class="typing-dots"><span>.</span><span>.</span><span>.</span></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `)
+                        }
                     });
             }
         });
