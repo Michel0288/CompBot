@@ -53,6 +53,7 @@ def predict_class(sentence, model):
         model = load_model('computing_courses.h5')
         words = pickle.load(open('words3.pkl','rb'))
         classes = pickle.load(open('classes3.pkl','rb'))
+        
     p = bow(sentence, words, show_details=False)
     res = model.predict(np.array([p]))[0]
     ERROR_THRESHOLD = 0.50
