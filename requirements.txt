@@ -12,6 +12,3 @@ Flask-Migrate
 Flask-Login
 psycopg2
 python-dotenv
-flask_mysqldb
-Flask-MySQL
-pymysql
