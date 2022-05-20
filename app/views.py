@@ -23,61 +23,8 @@ def home():
     """Render website's home page."""
     return render_template('home.html')
 
-@app.route("/register/", methods=["POST"])
-def register():
-    if request.method=="POST":
-        name = request.form['name']
-        email = request.form['email']
-        username = request.form['username']
-        password = request.form['password']
-        
-        #cur = MySQLdb.connect("localhost", "root", "", "capstone")
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO user_profiles(full_name, username, email, password) VALUES (%s, %s, %s, %s)", (name, username, email, password))
-        mysql.connection.commit()
-
-        # cur.execute("CREATE TABLE `%s`_compbot (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));"% str(username))
-
-        # cur.execute("CREATE TABLE `%s`_admin (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));"% str(username))
-        
-        cur.close()
-
-        session['name'] = name
-        session['username'] = username
-
-        redirect(url_for('chat_compbot', name=name))
-
-    return redirect(url_for('home'))
-
-@app.route("/login/", methods=["POST"])
-def login():
-    # if request.method=="POST":
-    #     email = request.form['email-login']
-    #     password = request.form['password-login']
-        
-    #     cur = mysql.connection.cursor()
-    #     cur.execute('SELECT * FROM user_profiles WHERE email = %s AND password = %s', (email, password,))
-    #     # Fetch one record and return result
-    #     account = cur.fetchone()
-    #     cur.close()
-
-    #     if account:
-    #         # Create session data, we can access this data in other routes
-    #         session['loggedin'] = True
-    #         session['name'] = account['fullname']
-    #         session['username'] = account['username']
-    return redirect(url_for('chat_compbot'))
-
-    # return redirect(url_for('home'))
-
 @app.route('/chat/compbot', methods=["GET","POST"])
 def chat_compbot():
-    # username = session['username']
-    # cur = mysql.connection.cursor()
-    # cur.execute('SELECT * FROM '+str({{username}})+'_compbot')
-    # # Fetch one record and return result
-    # data = cur.fetchall()
-    # cur.close()
     """Render the website's chat page for compbot"""
     if request.method == 'POST':
         userinput = request.form['userinput']
