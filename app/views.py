@@ -6,13 +6,11 @@ This file creates your application.
 """
 
 
-import MySQLdb
 from app import app, chat
 from flask import jsonify, render_template, request, redirect, url_for, flash, session
 from app.forms import RegisterForm
 # from app.forms import LoginForm
 
-from app import mysql
 
 ###
 # Routing for your application.
@@ -23,31 +21,31 @@ def home():
     """Render website's home page."""
     return render_template('home.html')
 
-@app.route("/register/", methods=["POST"])
-def register():
-    if request.method=="POST":
-        name = request.form['name']
-        email = request.form['email']
-        username = request.form['username']
-        password = request.form['password']
+# @app.route("/register/", methods=["POST"])
+# def register():
+#     if request.method=="POST":
+#         name = request.form['name']
+#         email = request.form['email']
+#         username = request.form['username']
+#         password = request.form['password']
         
-        #cur = MySQLdb.connect("localhost", "root", "", "capstone")
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO user_profiles(full_name, username, email, password) VALUES (%s, %s, %s, %s)", (name, username, email, password))
-        mysql.connection.commit()
+#         #cur = MySQLdb.connect("localhost", "root", "", "capstone")
+#         cur = mysql.connection.cursor()
+#         cur.execute("INSERT INTO user_profiles(full_name, username, email, password) VALUES (%s, %s, %s, %s)", (name, username, email, password))
+#         mysql.connection.commit()
 
-        # cur.execute("CREATE TABLE `%s`_compbot (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));"% str(username))
+#         # cur.execute("CREATE TABLE `%s`_compbot (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));"% str(username))
 
-        # cur.execute("CREATE TABLE `%s`_admin (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));"% str(username))
+#         # cur.execute("CREATE TABLE `%s`_admin (uid INT(11) AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255), by_who VARCHAR(255));"% str(username))
         
-        cur.close()
+#         cur.close()
 
-        session['name'] = name
-        session['username'] = username
+#         session['name'] = name
+#         session['username'] = username
 
-        redirect(url_for('chat_compbot', name=name))
+#         redirect(url_for('chat_compbot', name=name))
 
-    return redirect(url_for('home'))
+#     return redirect(url_for('home'))
 
 @app.route("/login/", methods=["POST"])
 def login():
