@@ -21,6 +21,7 @@ def home():
     """Render website's home page."""
     return render_template('home.html')
 
+<<<<<<< HEAD
 # @app.route("/register/", methods=["POST"])
 # def register():
 #     if request.method=="POST":
@@ -68,14 +69,10 @@ def login():
 
     # return redirect(url_for('home'))
 
+=======
+>>>>>>> 5843c556d4c19831039266049adcca1df771c5e8
 @app.route('/chat/compbot', methods=["GET","POST"])
 def chat_compbot():
-    # username = session['username']
-    # cur = mysql.connection.cursor()
-    # cur.execute('SELECT * FROM '+str({{username}})+'_compbot')
-    # # Fetch one record and return result
-    # data = cur.fetchall()
-    # cur.close()
     """Render the website's chat page for compbot"""
     if request.method == 'POST':
         userinput = request.form['userinput']
